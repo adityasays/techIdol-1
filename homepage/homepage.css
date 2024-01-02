@@ -120,14 +120,14 @@ display: none;
     text-decoration: none;
   }
 nav {
-    background-color: #EAEBFE;
-    padding-left: 3.5em;
-    
-    height: 5em;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #EAEBFE;
+  padding-left: 4.5em;
+  height: 4.5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  align-items: center;
 }
 
 nav ul {
@@ -303,8 +303,9 @@ nav ul li a {
     justify-content: left;
     align-items: baseline;
     flex-direction: column;
-    gap: 4em;
+    gap: 1.5em;
     padding-left: 1em;
+    padding-top: 6em;
  }
  .about{
  width: 100%;
@@ -372,7 +373,7 @@ letter-spacing: 0.05rem;
 
  .bluebreaker{
     width: 100%;
-    margin-top: 2rem;
+    margin-top: -7rem;
     height: 20rem;
     margin-bottom: 2em;
   z-index: 3;
@@ -672,7 +673,7 @@ button {
     color: white;
     border: 5px;
     width: 9em;
-    height: 3em;
+    height: 3.5em;
 }
 .logo11{
     
@@ -1978,7 +1979,7 @@ line-height: normal;
   }
   .our-trusted-partner-parent {
    
-    left: 17.5rem; }
+    left: 11.5rem; }
 
 }
 
@@ -2006,7 +2007,7 @@ line-height: normal;
         position: relative;
         width: 100%;
         overflow: hidden;
-        height: 44em;
+        height: 35em;
       }
   
       .carousel-home {
@@ -2409,3 +2410,12 @@ line-height: normal;
     font-weight: bolder;
     color: rgb(255, 255, 255);
   }
+  /* styles updated */
+  .nextsection-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    text-align: center;
+  }
+ 
