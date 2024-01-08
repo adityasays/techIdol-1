@@ -438,7 +438,23 @@ z-index: 3;
   }
   #footerelem li:not(:first-child) a:hover {
     color: #5044EB;
+    cursor: pointer;
 }
+#footerelem li a {
+  color: #000;
+
+  font-family: "Noto Sans";
+  font-size: 1.07rem;
+  font-style: normal !important;
+
+  font-weight: 400;
+  line-height: normal;
+}
+#footerelem li a:not(:first-child):hover {
+  color: #5044eb;
+  cursor: pointer;
+}
+#footerelem li a{ cursor: default;}
   /*css for new div */ 
 
 
