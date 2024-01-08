@@ -626,6 +626,8 @@ nav ul li a {
   background: #ddddfc;
   border-radius: 50%;
 }
+.donate-button button:hover {
+  background-color: #44d8eb; }
 #footerelem li:not(:first-child) a:hover {
   color: #5044eb;
 }
@@ -2290,7 +2292,7 @@ hr {
   flex-direction: row;
   gap: 20px;
 
-  width: 77%;
+  width: 83%;
   height: 31em;
 }
 .blc {
@@ -2328,6 +2330,7 @@ hr {
 }
 .headin {
   width: 100%;
+  margin-left: 1em;
   color: #000000;
   font-size: 25px;
   font-weight: bolder;
@@ -2345,6 +2348,7 @@ hr {
 .para {
   padding: 1rem 2rem 1rem 2rem;
   width: 100%;
+  margin-left: 1em;
   color: #757575;
   opacity: 0.9;
 }

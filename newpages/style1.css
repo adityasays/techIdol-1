@@ -2482,6 +2482,8 @@ line-height: normal;
   .right-arrow {
     right: 0em;
   }
+  .donate-button button:hover {
+    background-color: #44d8eb; }
 
   .review-container {
     position: relative;

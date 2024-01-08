@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-          const accordionItems = document.querySelectorAll('.has-dropdown');
-
-          accordionItems.forEach(item => {
-              item.addEventListener('click', function () {
-                  this.classList.toggle('active');
-              });
+        const dropdownItems = document.querySelectorAll('.has-dropdown');
+    
+        dropdownItems.forEach(item => {
+          item.addEventListener('mouseenter', function () {
+            const dropdownContent = this.querySelector('.dropdown-content');
+            dropdownContent.classList.toggle('active11'); 
           });
+        });
       });
-  </script>
+    </script>
   <script>
     function myFunction(x) {
       x.classList.toggle("change");

@@ -440,6 +440,8 @@ z-index: 3;
     color: #5044EB;
     cursor: pointer;
 }
+.donate-button button:hover {
+  background-color: #44d8eb; }
 #footerelem li a {
   color: #000;
 
