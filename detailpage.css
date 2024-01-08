@@ -2,19 +2,9 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Noto Sans';
 }
-.font{
-    font-family: "Anton", sans-serif;
-  font-family: "Comfortaa", sans-serif;
-  font-family: "Crete Round", serif;
-  font-family: "Dosis", sans-serif;
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "PT Serif", serif;
-  font-family: "Raleway", sans-serif;
-  font-family: "Rowdies", sans-serif;
-  font-family: "Teko", sans-serif;
-  font-family: "Work Sans", sans-serif;
-}
+
 .font1{
 
   color: #000;
@@ -41,23 +31,14 @@ line-height: normal;
 
   color: #000;
 
-font-family: 'Noto Sans';
+font-family: 'Noto Sans' !important;
 font-size: 1.22rem;
 font-style: normal !important;
 
 font-weight: 400;
 line-height: normal;
 }
-.font2{
-  color: #757575;
 
-  font-family: Noto Sans;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 1.5rem */
-  letter-spacing: 0.05rem;
-}
 
 .majorcontainer {
     width: 100vw;
@@ -90,7 +71,16 @@ line-height: normal;
   background-repeat: no-repeat;
   margin-bottom: 1rem;
 }
- 
+ .lisst li {
+  color: #000;
+
+  font-family: 'Noto Sans';
+  font-size: 1.07rem;
+  font-style: normal !important;
+  
+  font-weight: 400;
+  line-height: normal;
+ }
 
 
 

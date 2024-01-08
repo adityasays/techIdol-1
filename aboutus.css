@@ -62,13 +62,24 @@ line-height: normal;
 }
 
 .logo1 {
-    height: 11em;
-    width: 48em;
-    background-image: url('public/logo.jpeg');
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 1rem;
+  height: 9.5em;
+    width: 45em;
+  background-image: url('logonew.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
 }
+ 
+.styf li:not(:first-child){
+  cursor: pointer;
+ }
+ .styf li:first-child {
+  font-size: 0.90em;
+}
+ .styf li:not(:first-child):hover{
+  color: #000ed1;
+ }
  
 
 
@@ -120,12 +131,13 @@ display: none;
   }
 nav {
     background-color: #EAEBFE;
-    padding-left: 3.5em;
+    padding-left: 4.5em;
     
     height: 5em;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2em;
     align-items: center;
 }
 
@@ -144,30 +156,44 @@ nav ul li a {
     text-decoration: none;
     color: #000000;
 }
+.navbar nav ul li a:hover{
+  color: #5044EB;
+}
+.newnav ul li a:hover{
+  color: #5044EB;
+}
+.newnav  ul li a{
+  color: black;
+  text-decoration: none;
+}
 
 /* Styles for the accordion effect */
 .has-dropdown {
-    position: relative;
+  position: relative;
 }
-
 .dropdown-content {
   padding-top: 4px;
-    display: none;
-    opacity: 0.9;
-    position: absolute;
-    top: 100%;
-
-    left: 0;
-    padding-left: 0.4em;
-    background-color: #3400f1;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+  display: none;
+  opacity: 0.9;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 10px; /* Added padding for better styling */
+  background-color: #fff; /* Changed background color to white */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px; /* Added border-radius for rounded corners */
+  border: 1px solid #ddd; /* Added border for better visibility */
+  transition: opacity 0.3s ease-in-out; /* Added transition for smoother opacity change */
 }
-
-.has-dropdown.active .dropdown-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+.has-dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Increased gap for better spacing */
+  opacity: 1; /* Show dropdown with full opacity on hover */
+}
+.has-dropdown.active:hover .dropdown-content {
+  display: none; /* Close the dropdown on hover out */
 }
 
 
@@ -188,6 +214,13 @@ nav ul li a {
     display: flex;
     align-items: center;
 }
+.picopacity {
+  width: 100%;
+  height: 21em;
+  margin-top: 0rem;
+  background-color: rgba(0, 0, 0, 0.4); /* Use RGBA color to set background opacity */
+  position: relative;
+}
 
 .donate-button button svg {
     width: 100px;
@@ -203,7 +236,7 @@ nav ul li a {
 }
 .pic{
     width: 100%;
-    height: 27em;
+    height: 21em;
   
   margin-top: 0rem;
   background-image: url('public/hands.jpg');
@@ -218,7 +251,7 @@ nav ul li a {
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #ffffff;
+  color: #ffffff !important; /* Change text color to white */
   margin-top: 1em;
 
 }
@@ -235,6 +268,7 @@ nav ul li a {
     background: #ffffff;
     justify-content: center;
     align-items: center;
+    
     
   }
   
@@ -345,15 +379,15 @@ letter-spacing: 0.05rem;
 
 
  .bluebreaker{
-    width: 100%;
-    margin-top: 2rem;
-    height: 20rem;
-    margin-bottom: 2em;
-  
-    background: #EAEBFE;
- }
+  width: 100%;
+  margin-top: 5rem;
+  height: 20rem;
+  margin-bottom: 2em;
+z-index: 3;
+  background: #EAEBFE;
+}
  .bb{
-    display: flex; justify-content: center; align-items: center; gap: 6em;
+    display: flex; justify-content: center; align-items: center; gap: 7.3em;
  }
  .cont{
     display: flex; flex-direction: column ; justify-content: center; align-items: center; gap: 1em; height: 15em;
@@ -402,7 +436,9 @@ letter-spacing: 0.05rem;
     width: 3em;
     margin-top: 2em;
   }
-
+  #footerelem li:not(:first-child) a:hover {
+    color: #5044EB;
+}
   /*css for new div */ 
 
 
@@ -579,7 +615,7 @@ letter-spacing: 0.05rem;
     width: 100%;
     max-height: 29em;
     background: #EAEBFE;
-    padding-top: 7em;
+    padding-top: 3.5em;
     padding-left: 3em;
     padding-right: 3em;
     display: flex;
@@ -776,11 +812,37 @@ hr {
    .container{
     display: block;
    }
+
+   .font111{
+    color: #000;
+  font-family: 'Noto Sans';
+  font-size: 1.07rem;
+  font-style: normal !important;
+  font-weight: 400;
+  line-height: normal;
+  }
+  .font1111{
+    color: #000;
+  font-family: 'Noto Sans';
+  font-size: 1.22rem;
+  font-style: normal !important;
+  font-weight: 400;
+  line-height: normal;
+  }
+  .font11111{
+    color: #000;
+    font-family: 'Noto Sans';
+    font-size: 2.22em;
+    font-style: italic !important;
+    
+    font-weight: 400;
+    line-height: normal;
+  }
    nav{
     justify-content: start;
     padding-left: 1em;
     align-items: center;
-    height: 4rem;
+    height: 4.5rem;
     gap: 1em;
     flex-direction: row;
     padding-right: 0;
@@ -1465,11 +1527,19 @@ line-height: normal;
         gap: 0.5em;}
         nav {
           background-color: #EAEBFE;
-          padding-left: 1.5em;}
+          padding-left: 4em !important;}
           .btnstyle{
             width: 7em;
            }
+           nav ul li{
+            margin-right: 18px !important;
+           }
+           nav {
+            gap: 0em !important;
+           }
+           
 }
+
 @media screen and (min-width: 901px) and (max-width: 1000px) { }
 
 @media screen and (min-width: 1001px) and (max-width: 1200px) {

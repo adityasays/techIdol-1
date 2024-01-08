@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     <link rel="stylesheet" href="aboutus.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Product Sans:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Product Sans:wght@700&display=swap"
@@ -13,15 +18,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-          const accordionItems = document.querySelectorAll('.has-dropdown');
-
-          accordionItems.forEach(item => {
-              item.addEventListener('click', function () {
-                  this.classList.toggle('active');
-              });
+        const dropdownItems = document.querySelectorAll('.has-dropdown');
+    
+        dropdownItems.forEach(item => {
+          item.addEventListener('mouseenter', function () {
+            const dropdownContent = this.querySelector('.dropdown-content');
+            dropdownContent.classList.toggle('active11'); 
           });
+        });
       });
-  </script>
+    </script>
   <script>
     function myFunction(x) {
       x.classList.toggle("change");
@@ -36,25 +42,30 @@
     </script>
 </head>
 <body>
+    <!-- The start with logo and nav bar -->
     <div class="majorcontainer">
-        <!--first section ,  this containes logo , navbar and image with text-->
-        <div class="minorcontainer1">
-            <div class="logo1"> </div>
-            <div class="navbar font1">
-              <nav >
+
+      <!--first section ,  this containes logo , navbar and image with text-->
+
+      <div class="minorcontainer1">
+          <div class="logo1"> </div>
+          <div class="navbar font1">
+              <nav>
                   <ul>
-                      <li class="active11"><a href="/homepage/homepage.html">Home</a></li>
-                      <li class="active11"><a href="#">About Us</a></li>
-                      <li class="has-dropdown active11"><a href="#">Governing Body <i class="fa fa-angle-down" style="font-size: 15px;"></i>  </a>
+                      <li class="active11"><a href="#">Home</a></li>
+                      <li class="active11"><a href="../aboutus.html">About Us</a></li>
+                      <li class="has-dropdown active11"><a href="#">Governing Body <i class="fa fa-angle-down"
+                                  style="font-size: 15px;"></i> </a>
                           <div class="dropdown-content active11">
-                              <a href="office.html">Office Bearers</a>
-                              <a href="commitee.html">Governing Commitee</a>
-                              
+                              <a href="../office.html">Office Bearers</a>
+                              <a href="../commitee.html">Governing Commitee</a>
+
                           </div>
                       </li>
-                      <li class="has-dropdown active11"><a href="#">Programs <i class="fa fa-angle-down" style="font-size: 15px;"></i></a>
+                      <li class="has-dropdown active11"><a href="#">Programs <i class="fa fa-angle-down"
+                                  style="font-size: 15px;"></i></a>
                           <div class="dropdown-content active11">
-                              <a  href="programes.html">Educational Guidance</a>
+                              <a href="../programes.html">Educational Guidance</a>
                               <a href="#">Schoolarship</a>
                               <a href="#">Skill Developement</a>
                               <a href="#">Quresh Matrimony</a>
@@ -62,36 +73,38 @@
                       </li>
                       <li class="active11"><a href="#">Gallery</a></li>
                       <li class="active11"><a href="#">Membership</a></li>
-                      <li class="active11"><a href="report.html">Annual Report</a></li>
+                      <li class="active11"><a href="#">Annual Report</a></li>
                       <li class="active11"><a href="#">Contact Us</a></li>
                   </ul>
                   <div class="container" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
+                      <div class="bar1"></div>
+                      <div class="bar2"></div>
+                      <div class="bar3"></div>
                   </div>
                   <div class="donate-button">
-                    <button style="width: 10em; display: flex; justify-content: center">
-                        DONATE NOW
-                       
-                    </button>
-                </div>
+                      <button id="buttonstart">
+                          DONATE NOW
+
+                      </button>
+                  </div>
               </nav>
           </div>
-         <!--  Hamburger-->
+          <!--  Hamburger-->
           <div class="newnav font1">
-            
+
               <ul>
                   <li class="active1" style="margin-top: 2em;"><a href="#">Home</a></li>
                   <li class="active1"><a href="#">About Us</a></li>
-                  <li class="has-dropdown active1"><a href="#">Governing Body <i class="fa fa-angle-down" style="font-size: 15px;"></i>  </a>
+                  <li class="has-dropdown active1"><a href="#">Governing Body <i class="fa fa-angle-down"
+                              style="font-size: 15px;"></i> </a>
                       <div class="dropdown-content active1">
                           <a href="#">Subitem 1</a>
                           <a href="#">Subitem 2</a>
                           <a href="#">Subitem 3</a>
                       </div>
                   </li>
-                  <li class="has-dropdown active1"><a href="#">Programs <i class="fa fa-angle-down" style="font-size: 15px;"></i></a>
+                  <li class="has-dropdown active1"><a href="#">Programs <i class="fa fa-angle-down"
+                              style="font-size: 15px;"></i></a>
                       <div class="dropdown-content active1">
                           <a href="#">Subitem 1</a>
                           <a href="#">Subitem 2</a>
@@ -100,18 +113,24 @@
                   </li>
                   <li class="active1"><a href="#">Gallery</a></li>
                   <li class="active1"><a href="#">Membership</a></li>
-                  <li class="active1"><a href="#">Annual Report</a></li>
+                  <li class="active1"><a href="../report.html">Annual Report</a></li>
                   <li class="active1"><a href="#">Contact Us</a></li>
               </ul>
-              
-              
-          
 
-          </div> 
 
-          <!--  normal flow-->
-            <div class="pic"> <div class="pictext font1"> Home / About us <br> <h2>About Us</h2> </div></div>
-        </div>
+
+
+
+          </div>
+
+          <div class="pic">
+              <div class="picopacity">
+                  <div class="pictext font1"> Home / Programs <br>
+                      <h2>Education Guidance</h2>
+                  </div>
+              </div>
+          </div>
+      </div>
 
         <!-- This section contains image with text on right side -->
 
@@ -235,45 +254,55 @@
  <!-- The Footer begins from here  -->
 
 
-<footer class="footer">
-<div class="leftside">
-  <div class="logo11"> </div>
-  <div class="logo2"></div>
-  <div class="subscription-box">
-    <input type="email" placeholder="Your email"><button onclick="subscribe()">Subscribe</button>
-</div>
-</div>
-<div class="rightside "> 
-    <div class="st"><ul class="font3 styf"> <li><a style="font-weight: 1000; font-size: 1.22em;"> Programs</a></li>
-        <li><a> Educationa Guidance</a></li>
-        <li><a> SKill Developement</a></li>
-        <li><a> Scholarship</a></li>
-        <li><a> Quresh Matrimony</a></li>
-    </ul>  <ul class="font3 styf"> <li><a style="font-weight: 1200; font-size: 1.22em;"> Platform</a></li>
-        <li><a> Home</a></li>
-        <li><a> About us</a></li>
-        <li><a> Gallery</a></li>
-        <li><a> Annual Report</a></li>
-        <li><a> Contact Us</a></li>
-    </ul>  <ul class="font3 styf"> <li><a style="font-weight: 1000; font-size: 1.22em;"> Contact</a></li>
-        <li><a> <i class="fa fa-map-marker" aria-hidden="true" style="color: #5044EB;"></i> New Delhi - 110095</a></li>
-        <li><a><i class="fa fa-phone" style="font-size:16px; color: #5044EB;"></i>  +91 9876543210</a></li>
-        <li><a><i class="fa fa-envelope" style="font-size:16px; color: #5044EB;"></i> Qureshconference@gmail.com</a></li>
-        
-    </ul></div>
-</div>
- 
+ <footer class="footer">
+  <div class="leftside">
+      <div class="logo11"> </div>
+      <div class="logo2"></div>
+      <div class="subscription-box">
+          <input type="email" placeholder="Your email"><button onclick="subscribe()">Subscribe</button>
+      </div>
+  </div>
+  <div class="rightside ">
+      <div class="st">
+          <ul class="font111 styf" id="footerelem">
+              <li><a style="font-weight: 1000; font-size: 1.22em;"> Programs</a></li>
+              <li><a> Educational Guidance</a></li>
+              <li><a> Skill Developement</a></li>
+              <li><a> Scholarship</a></li>
+              <li><a> Quresh Matrimony</a></li>
+          </ul>
+          <ul class="font111 styf" id="footerelem">
+              <li><a style="font-weight: 1000; font-size: 1.22em;"> Platform</a></li>
+              <li><a> Home</a></li>
+              <li><a> About us</a></li>
+              <li><a> Gallery</a></li>
+              <li><a> Annual Report</a></li>
+              <li><a> Contact Us</a></li>
+          </ul>
+          <ul class="font111 styf" id="footerelem">
+              <li><a style="font-weight: 1000; font-size: 1.22em;"> Contact</a></li>
+              <li><a> <i class="fa fa-map-marker" aria-hidden="true" style="color: #5044EB;"></i> New Delhi -
+                      110095</a></li>
+              <li><a><i class="fa fa-phone" style="font-size:16px; color: #5044EB;"></i> +91 9876543210</a>
+              </li>
+              <li><a><i class="fa fa-envelope" style="font-size:16px; color: #5044EB;"></i>
+                      Qureshconference@gmail.com</a></li>
+
+          </ul>
+      </div>
+  </div>
+
 
 
 
 
 
 </footer>
-<div class="footerextended font"> 
-  <hr > 
+<div class="footerextended font">
+  <hr>
   &nbsp; &nbsp; &nbsp;| All Rights Reserved
 </div>
-    </div>
+</div>
     <script src="aboutus.js"></script>
     <script>
       function subscribe() { 
