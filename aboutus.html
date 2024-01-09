@@ -1,168 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
-    <link rel="stylesheet" href="aboutus.css" />
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Product Sans:wght@700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Product Sans:wght@700&display=swap"
-    />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const dropdownItems = document.querySelectorAll('.has-dropdown');
-    
-        dropdownItems.forEach(item => {
-          item.addEventListener('mouseenter', function () {
-            const dropdownContent = this.querySelector('.dropdown-content');
-            dropdownContent.classList.toggle('active11'); 
-          });
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
+  <link rel="stylesheet" href="aboutus.css" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Product Sans:wght@700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Product Sans:wght@700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownItems = document.querySelectorAll('.has-dropdown');
+
+      dropdownItems.forEach(item => {
+        item.addEventListener('mouseenter', function () {
+          const dropdownContent = this.querySelector('.dropdown-content');
+          dropdownContent.classList.toggle('active11');
         });
       });
-    </script>
+    });
+  </script>
   <script>
     function myFunction(x) {
       x.classList.toggle("change");
-    
-    
-    const slideContainer = document.getElementsByClassName('newnav')[0];
 
-  
-        slideContainer.style.left = (slideContainer.style.left === '0px') ? '-550px' : '0px';
-    
+
+      const slideContainer = document.getElementsByClassName('newnav')[0];
+
+
+      slideContainer.style.left = (slideContainer.style.left === '0px') ? '-550px' : '0px';
+
     }
-    </script>
+  </script>
 </head>
+
 <body>
-    <!-- The start with logo and nav bar -->
-    <div class="majorcontainer">
+  <!-- The start with logo and nav bar -->
+  <div class="majorcontainer">
 
-      <!--first section ,  this containes logo , navbar and image with text-->
+    <!--first section ,  this containes logo , navbar and image with text-->
 
-      <div class="minorcontainer1">
-          <div class="logo1"> </div>
-          <div class="navbar font1">
-              <nav>
-                  <ul>
-                      <li class="active11"><a href="#">Home</a></li>
-                      <li class="active11"><a href="../aboutus.html">About Us</a></li>
-                      <li class="has-dropdown active11"><a href="#">Governing Body <i class="fa fa-angle-down"
-                                  style="font-size: 15px;"></i> </a>
-                          <div class="dropdown-content active11">
-                              <a href="../office.html">Office Bearers</a>
-                              <a href="../commitee.html">Governing Commitee</a>
+    <div class="minorcontainer1">
+      <div class="logo1"> </div>
+      <div class="navbar font1">
+        <nav>
+          <ul>
+            <li class="active11"><a href="#">Home</a></li>
+            <li class="active11"><a href="../aboutus.html">About Us</a></li>
+            <li class="has-dropdown active11"><a href="#">Governing Body <i class="fa fa-angle-down"
+                  style="font-size: 15px;"></i> </a>
+              <div class="dropdown-content active11">
+                <a href="../office.html">Office Bearers</a>
+                <a href="../commitee.html">Governing Commitee</a>
 
-                          </div>
-                      </li>
-                      <li class="has-dropdown active11"><a href="#">Programs <i class="fa fa-angle-down"
-                                  style="font-size: 15px;"></i></a>
-                          <div class="dropdown-content active11">
-                              <a href="../programes.html">Educational Guidance</a>
-                              <a href="#">Schoolarship</a>
-                              <a href="#">Skill Developement</a>
-                              <a href="#">Quresh Matrimony</a>
-                          </div>
-                      </li>
-                      <li class="active11"><a href="#">Gallery</a></li>
-                      <li class="active11"><a href="#">Membership</a></li>
-                      <li class="active11"><a href="#">Annual Report</a></li>
-                      <li class="active11"><a href="#">Contact Us</a></li>
-                  </ul>
-                  <div class="container" onclick="myFunction(this)">
-                      <div class="bar1"></div>
-                      <div class="bar2"></div>
-                      <div class="bar3"></div>
-                  </div>
-                  <div class="donate-button">
-                      <button id="buttonstart">
-                          DONATE NOW
-
-                      </button>
-                  </div>
-              </nav>
-          </div>
-          <!--  Hamburger-->
-          <div class="newnav font1">
-
-              <ul>
-                  <li class="active1" style="margin-top: 2em;"><a href="#">Home</a></li>
-                  <li class="active1"><a href="#">About Us</a></li>
-                  <li class="has-dropdown active1"><a href="#">Governing Body <i class="fa fa-angle-down"
-                              style="font-size: 15px;"></i> </a>
-                      <div class="dropdown-content active1">
-                          <a href="#">Subitem 1</a>
-                          <a href="#">Subitem 2</a>
-                          <a href="#">Subitem 3</a>
-                      </div>
-                  </li>
-                  <li class="has-dropdown active1"><a href="#">Programs <i class="fa fa-angle-down"
-                              style="font-size: 15px;"></i></a>
-                      <div class="dropdown-content active1">
-                          <a href="#">Subitem 1</a>
-                          <a href="#">Subitem 2</a>
-                          <a href="#">Subitem 3</a>
-                      </div>
-                  </li>
-                  <li class="active1"><a href="#">Gallery</a></li>
-                  <li class="active1"><a href="#">Membership</a></li>
-                  <li class="active1"><a href="../report.html">Annual Report</a></li>
-                  <li class="active1"><a href="#">Contact Us</a></li>
-              </ul>
-
-
-
-
-
-          </div>
-
-          <div class="pic">
-              <div class="picopacity">
-                  <div class="pictext font1"> Home / About Us <br>
-                      <h2>About Us</h2>
-                  </div>
               </div>
+            </li>
+            <li class="has-dropdown active11"><a href="#">Programs <i class="fa fa-angle-down"
+                  style="font-size: 15px;"></i></a>
+              <div class="dropdown-content active11">
+                <a href="../programes.html">Educational Guidance</a>
+                <a href="#">Schoolarship</a>
+                <a href="#">Skill Developement</a>
+                <a href="#">Quresh Matrimony</a>
+              </div>
+            </li>
+            <li class="active11"><a href="#">Gallery</a></li>
+            <li class="active11"><a href="#">Membership</a></li>
+            <li class="active11"><a href="#">Annual Report</a></li>
+            <li class="active11"><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
+          <div class="donate-button">
+            <button id="buttonstart">
+              DONATE NOW
+
+            </button>
+          </div>
+        </nav>
+      </div>
+      <!--  Hamburger-->
+      <div class="newnav font1">
+
+        <ul>
+          <li class="active1" style="margin-top: 2em;"><a href="#">Home</a></li>
+          <li class="active1"><a href="#">About Us</a></li>
+          <li class="has-dropdown active1"><a href="#">Governing Body <i class="fa fa-angle-down"
+                style="font-size: 15px;"></i> </a>
+            <div class="dropdown-content active1">
+              <a href="#">Subitem 1</a>
+              <a href="#">Subitem 2</a>
+              <a href="#">Subitem 3</a>
+            </div>
+          </li>
+          <li class="has-dropdown active1"><a href="#">Programs <i class="fa fa-angle-down"
+                style="font-size: 15px;"></i></a>
+            <div class="dropdown-content active1">
+              <a href="#">Subitem 1</a>
+              <a href="#">Subitem 2</a>
+              <a href="#">Subitem 3</a>
+            </div>
+          </li>
+          <li class="active1"><a href="#">Gallery</a></li>
+          <li class="active1"><a href="#">Membership</a></li>
+          <li class="active1"><a href="../report.html">Annual Report</a></li>
+          <li class="active1"><a href="#">Contact Us</a></li>
+        </ul>
+
+
+
+
+
       </div>
 
-        <!-- This section contains image with text on right side -->
-
-   <div class="nextsection"> .
-  <div class="leftsection"> 
-    <div class="rect"></div>
-     <div class="photo1"></div>
-      
-  
-</div>
-  <div class="rightsection ">
-   <div class="about half-underline"> About us </div>
-   <div class="head font"> We are the NGO that helps the <br> Needy ones</div>
- <div class="txt font2"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Repellendus facere asperiores, facilis harum nesciunt nam voluptates,<br> nostrum quod ratione necessitatibus officia,<br> sequi magni praesentium hic numquam aut <br>nisi expedita modi.Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Repellendus facere asperiores, facilis harum nesciunt nam voluptates,<br> nostrum quod ratione necessitatibus officia,<br> sequi magni praesentium hic numquam aut <br>nisi expedita modi.</div>
-  </div>
-   </div>
-
-
-  <!-- Next section div will come after this-->
-
-
-  <div class="bluebreaker bb"">
-    <div class="cont font"
-    style="display: flex; flex-direction: column ; justify-content: center; align-items: center; gap: 1em; height: 100%;">
-    <div style="display: flex; justify-content: center; align-items: center; gap:0.5em">
-      <div style="font-weight: 900; font-size: 4em;">15</div>
-      <div style="color: #5044EB; font-size: 3em; font-weight: 900; margin-top: 4px;">yr</div>
+      <div class="pic">
+        <div class="picopacity">
+          <div class="pictext font1"> Home / About Us <br>
+            <h2>About Us</h2>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="text2">15 years of working<br>
+
+    <!-- This section contains image with text on right side -->
+    <div class="nextsection-container">
+      <div class="hed  ">
+        <h1 class="underrline-text ">About Us</h1>
+      </div>
+      <div class="nextsection"> .
+        <div class="leftsection">
+          <div class="rect"></div>
+          <div class="photo1">
+
+          </div>
+
+
+      
+      </div>
+      <div class="rightsection ">
+        
+        <div class="head font"> We are the NGO that helps the <br> Needy ones</div>
+        <div class="txt font2"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Repellendus facere
+          asperiores, facilis harum nesciunt nam voluptates,<br> nostrum quod ratione necessitatibus officia,<br> sequi
+          magni praesentium hic numquam aut <br>nisi expedita modi.Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit.<br> Repellendus facere asperiores, facilis harum nesciunt nam voluptates,<br> nostrum quod ratione
+          necessitatibus officia,<br> sequi magni praesentium hic numquam aut <br>nisi expedita modi.</div>
+      </div></div>
+    </div>
+
+
+    <!-- Next section div will come after this-->
+
+
+    <div class="bluebreaker bb"">
+    <div class=" cont font"
+      style="display: flex; flex-direction: column ; justify-content: center; align-items: center; gap: 1em; height: 100%;">
+      <div style="display: flex; justify-content: center; align-items: center; gap:0.5em">
+        <div style="font-weight: 900; font-size: 4em;">15</div>
+        <div style="color: #5044EB; font-size: 3em; font-weight: 900; margin-top: 4px;">yr</div>
+      </div>
+      <div class="text2">15 years of working<br>
         experince</div>
 
-  </div>
+    </div>
     <div class="linee"></div>
     <div class="cont font">
       <div style="display: flex; justify-content: center; align-items: center; gap:0.5em">
@@ -176,138 +185,127 @@
     <div class="linee"></div>
 
     <div class="cont font"
-    style="display: flex; flex-direction: column ; justify-content: center; align-items: center; gap: 1em; height: 100%;">
-    <div style="display: flex; justify-content: center; align-items: center; gap:0.5em">
-      <div style="font-weight: 900; font-size: 4em;">1</div>
-      <div style="color: #5044EB; font-size: 3em; font-weight: 900; margin-top: 4px;">M</div>
-    </div>
-    <div class="text2">$1 million money raises<br>
+      style="display: flex; flex-direction: column ; justify-content: center; align-items: center; gap: 1em; height: 100%;">
+      <div style="display: flex; justify-content: center; align-items: center; gap:0.5em">
+        <div style="font-weight: 900; font-size: 4em;">1</div>
+        <div style="color: #5044EB; font-size: 3em; font-weight: 900; margin-top: 4px;">M</div>
+      </div>
+      <div class="text2">$1 million money raises<br>
         for needy ones</div>
 
-  </div>
+    </div>
 
   </div>
   <!--   Next section which contains our misson and vision divs-->
 
-  <div class="nextsection"  >
-    <div class="section font">       
+  <div class="nextsection">
+    <div class="section font">
       <div class="l1"> </div>
       <div class="head"> Our Mission</div>
-      <div class="txt"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Accusamus sit iure, quia nisi adipisci perspiciatis?</div>
+      <div class="txt"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Accusamus sit iure, quia nisi
+        adipisci perspiciatis?</div>
 
     </div>
-    <div class="section font"> <div class="l11"> </div>
-    <div class="head"> Our Vision</div>
-    <div class="txt"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Accusamus sit iure, quia nisi adipisci perspiciatis?</div> </div>
-      
-</div>
-<!-- This is the next section containing brands -->
-<div class="rectangle-parent font">
-  <div class="group-child"></div>
-  <img class="frame-icon" alt="" src="./public/frame.svg" />
+    <div class="section font">
+      <div class="l11"> </div>
+      <div class="head"> Our Vision</div>
+      <div class="txt"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Accusamus sit iure, quia nisi
+        adipisci perspiciatis?</div>
+    </div>
 
-  <div class="our-trusted-partner-parent">
-    <b class="our-trusted-partner">Our Trusted Partner</b>
-    <div class="mask-group-parent">
-      <img
-        class="mask-group-icon"
-        alt=""
-        src="./public/mask-group@2x.png"
-      />
+  </div>
+  <!-- This is the next section containing brands -->
+  <div class="rectangle-parent font">
+    <div class="group-child"></div>
+    <img class="frame-icon" alt="" src="./public/frame.svg" />
 
-      <img
-        class="mask-group-icon1"
-        alt=""
-        src="./public/mask-group1@2x.png"
-      />
+    <div class="our-trusted-partner-parent">
+      <b class="our-trusted-partner">Our Trusted Partner</b>
+      <div class="mask-group-parent">
+        <img class="mask-group-icon" alt="" src="./public/mask-group@2x.png" />
 
-      <img
-        class="mask-group-icon2"
-        alt=""
-        src="./public/mask-group2@2x.png"
-      />
+        <img class="mask-group-icon1" alt="" src="./public/mask-group1@2x.png" />
 
-      <img
-        class="mask-group-icon3"
-        alt=""
-        src="./public/mask-group3@2x.png"
-      />
+        <img class="mask-group-icon2" alt="" src="./public/mask-group2@2x.png" />
+
+        <img class="mask-group-icon3" alt="" src="./public/mask-group3@2x.png" />
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Next section contains donate now div and footer-->
+  <!-- Next section contains donate now div and footer-->
 
-<div class="secbf">    
-<div class="circle1"></div>
-<div class="circle2"></div>
-<div class="circle3"></div>
-<div class="circle4"></div>
-  <div class="t">Start Contributing for<br>better tomorrow</div>
-  <a href="#" class="styled-button">DONATE</a>
+  <div class="secbf">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="t">Start Contributing for<br>better tomorrow</div>
+    <a href="#" class="styled-button">DONATE</a>
 
-</div>
-
- 
+  </div>
 
 
- <!-- The Footer begins from here  -->
 
 
- <footer class="footer">
-  <div class="leftside">
+  <!-- The Footer begins from here  -->
+
+
+  <footer class="footer">
+    <div class="leftside">
       <div class="logo11"> </div>
       <div class="logo2"></div>
       <div class="subscription-box">
-          <input type="email" placeholder="Your email"><button onclick="subscribe()">Subscribe</button>
+        <input type="email" placeholder="Your email"><button onclick="subscribe()">Subscribe</button>
       </div>
-  </div>
-  <div class="rightside ">
+    </div>
+    <div class="rightside ">
       <div class="st">
-          <ul class="font111 styf" id="footerelem">
-              <li><a style="font-weight: 1000; font-size: 1.22em;"> Programs</a></li>
-              <li><a> Educational Guidance</a></li>
-              <li><a> Skill Developement</a></li>
-              <li><a> Scholarship</a></li>
-              <li><a> Quresh Matrimony</a></li>
-          </ul>
-          <ul class="font111 styf" id="footerelem">
-              <li><a style="font-weight: 1000; font-size: 1.22em;"> Platform</a></li>
-              <li><a> Home</a></li>
-              <li><a> About us</a></li>
-              <li><a> Gallery</a></li>
-              <li><a> Annual Report</a></li>
-              <li><a> Contact Us</a></li>
-          </ul>
-          <ul class="font111 styf" id="footerelem">
-              <li><a style="font-weight: 1000; font-size: 1.22em;"> Contact</a></li>
-              <li><a> <i class="fa fa-map-marker" aria-hidden="true" style="color: #5044EB;"></i> New Delhi -
-                      110095</a></li>
-              <li><a><i class="fa fa-phone" style="font-size:16px; color: #5044EB;"></i> +91 9876543210</a>
-              </li>
-              <li><a><i class="fa fa-envelope" style="font-size:16px; color: #5044EB;"></i>
-                      Qureshconference@gmail.com</a></li>
+        <ul class="font111 styf" id="footerelem">
+          <li><a style="font-weight: 1000; font-size: 1.22em;"> Programs</a></li>
+          <li><a> Educational Guidance</a></li>
+          <li><a> Skill Developement</a></li>
+          <li><a> Scholarship</a></li>
+          <li><a> Quresh Matrimony</a></li>
+        </ul>
+        <ul class="font111 styf" id="footerelem">
+          <li><a style="font-weight: 1000; font-size: 1.22em;"> Platform</a></li>
+          <li><a> Home</a></li>
+          <li><a> About us</a></li>
+          <li><a> Gallery</a></li>
+          <li><a> Annual Report</a></li>
+          <li><a> Contact Us</a></li>
+        </ul>
+        <ul class="font111 styf" id="footerelem">
+          <li><a style="font-weight: 1000; font-size: 1.22em;"> Contact</a></li>
+          <li><a> <i class="fa fa-map-marker" aria-hidden="true" style="color: #5044EB;"></i> New Delhi -
+              110095</a></li>
+          <li><a><i class="fa fa-phone" style="font-size:16px; color: #5044EB;"></i> +91 9876543210</a>
+          </li>
+          <li><a><i class="fa fa-envelope" style="font-size:16px; color: #5044EB;"></i>
+              Qureshconference@gmail.com</a></li>
 
-          </ul>
+        </ul>
       </div>
+    </div>
+
+
+
+
+
+
+  </footer>
+  <div class="footerextended font">
+    <hr>
+    &nbsp; &nbsp; &nbsp;| All Rights Reserved
   </div>
-
-
-
-
-
-
-</footer>
-<div class="footerextended font">
-  <hr>
-  &nbsp; &nbsp; &nbsp;| All Rights Reserved
-</div>
-</div>
-    <script src="aboutus.js"></script>
-    <script>
-      function subscribe() { 
-          alert("Subscribed!");
-      }
+  </div>
+  <script src="aboutus.js"></script>
+  <script>
+    function subscribe() {
+      alert("Subscribed!");
+    }
   </script>
 </body>
+
 </html>

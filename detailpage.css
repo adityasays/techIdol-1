@@ -179,19 +179,22 @@ nav ul li a:hover{
   opacity: 0.9;
   position: absolute;
   top: 100%;
-  left: 0;
-  padding: 10px; /* Added padding for better styling */
+  margin-top: 1px;
+  left: -21px;
+  
+  padding: 13px; /* Added padding for better styling */
   background-color: #fff; /* Changed background color to white */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 5px; /* Added border-radius for rounded corners */
   border: 1px solid #ddd; /* Added border for better visibility */
-  transition: opacity 0.3s ease-in-out; /* Added transition for smoother opacity change */
+  transition: opacity 0.8s ease-in-out; /* Added transition for smoother opacity change */
 }
 .has-dropdown:hover .dropdown-content {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Increased gap for better spacing */
+  gap: 14px; 
+  white-space: nowrap;
   opacity: 1; /* Show dropdown with full opacity on hover */
 }
 .has-dropdown.active:hover .dropdown-content {
@@ -1230,6 +1233,20 @@ nav ul li {
 
   }
 }
+@media (max-width: 1100px) {
+  .our-trusted-partner-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3em;
+
+  }
+  .our-trusted-partner-parent { top: 3rem; } 
+  .our-trusted-partner-parent {
+    left: 11.5rem;
+}
+  
+}
 @media (max-width: 900px) {
   .our-trusted-partner-parent {
     position: absolute;
@@ -1630,6 +1647,7 @@ line-height: normal;
   .secbf{
     min-height: 17em;
   }
+  .rightright{flex-direction: column !important;}
   
 }
 
@@ -1644,6 +1662,7 @@ line-height: normal;
     width: 20%;
     
   }
+  .rightright{flex-direction: column !important;}
 }
 
 
@@ -1660,6 +1679,7 @@ line-height: normal;
   .minorcontainer1 {
     height: 34em;
   }
+  .rightright{flex-direction: column !important;}
   
 }
 
@@ -1667,11 +1687,13 @@ line-height: normal;
 @media screen and (min-width: 601px) and (max-width: 700px) {
   .our-trusted-partner-parent {
     margin-left: 0.5em;}
+    .rightright{flex-direction: column !important;}
  
 }
 @media screen and (min-width: 701px) and (max-width: 800px) {
   .our-trusted-partner-parent {
     margin-left: 3.5em;}
+    .rightright{flex-direction: column !important;}
  
 }
 
@@ -1691,14 +1713,22 @@ line-height: normal;
           .btnstyle{
             width: 7em;
            }
+           .rightright{flex-direction: column !important;}
 }
-@media screen and (min-width: 901px) and (max-width: 1000px) { }
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+  .our-trusted-partner-parent {
+    left: 3.5rem;
+}
+.our-trusted-partner { width: 22rem;}
+.our-trusted-partner-parent { gap: 1.3em;}
+.rightright{flex-direction: column !important;}
+ }
 
 @media screen and (min-width: 1001px) and (max-width: 1200px) {
-  .our-trusted-partner { width: 15.6rem;}
+  .our-trusted-partner { width: 22.6rem;}
   .our-trusted-partner-parent {
     
-    left: 2.5rem; }
+    left: 10rem; }
     .mask-group-parent, .our-trusted-partner-parent {
      
       gap: 1rem;
@@ -1708,7 +1738,14 @@ line-height: normal;
     }
   
 } 
- 
+@media screen and (min-width: 1101px) and (max-width : 1200px) { 
+
+  .our-trusted-partner-parent {
+    left: 3rem; }
+    .our-trusted-partner {
+      width: 13.600000000000001rem;}
+
+}
 
 @media screen and (min-width: 1201px) and (max-width : 1400px) {
   .our-trusted-partner-parent {
@@ -1746,6 +1783,13 @@ line-height: normal;
       }
 
 }
+
+
+/* newer */ 
+
+
+
+
 /* Details page css */
 .detailcontainer{
   width: 100%;
@@ -1794,6 +1838,39 @@ line-height: normal;
   min-width: 18em;
   height: 22em;
   background-image: url('public/rectangle-200@2x.png');
+    background-size: cover;
+    background-position: center;
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
+.detailshead h1{
+  margin-bottom: 2px;
+}
+.introdetail {
+  margin-bottom: 1rem;
+}
+.profilephoto1{
+  min-width: 18em;
+  height: 22em;
+  background-image: url('public/rectangle-2001@2x.png');
+    background-size: cover;
+    background-position: center;
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
+.profilephoto2{
+  min-width: 18em;
+  height: 22em;
+  background-image: url('public/rectangle-2002@2x.png');
+    background-size: cover;
+    background-position: center;
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
+.profilephoto3{
+  min-width: 18em;
+  height: 22em;
+  background-image: url('public/rectangle-2003@2x.png');
     background-size: cover;
     background-position: center;
   border-radius: 15px;

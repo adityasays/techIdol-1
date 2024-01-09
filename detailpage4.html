@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Detail Page</title>
+    <link rel="stylesheet" href="detailpage.css" />
+    <link rel="stylesheet" <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownItems = document.querySelectorAll('.has-dropdown');
+
+            dropdownItems.forEach(item => {
+                item.addEventListener('mouseenter', function () {
+                    const dropdownContent = this.querySelector('.dropdown-content');
+                    dropdownContent.classList.toggle('active11');
+                });
+            });
+        });
+    </script>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+
+
+            const slideContainer = document.getElementsByClassName('newnav')[0];
+
+
+            slideContainer.style.left = (slideContainer.style.left === '0px') ? '-550px' : '0px';
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="majorcontainer">
+        <!--first section ,  this containes logo , navbar and image with text-->
+        <div class="minorcontainer1">
+            <div class="logo1"> </div>
+            <div class="navbar font111">
+                <nav class="font111">
+                    <ul>
+                        <li class="active11"><a href="#">Home</a></li>
+                        <li class="active11"><a href="#">About Us</a></li>
+                        <li class="has-dropdown active11"><a href="#">Governing Body <i class="fa fa-angle-down"
+                                    style="font-size: 15px;"></i> </a>
+                            <div class="dropdown-content active11">
+                                <a href="#">Office Bearers</a>
+                                <a href="#">Governing Commitee</a>
+
+                            </div>
+                        </li>
+                        <li class="has-dropdown active11"><a href="#">Programs <i class="fa fa-angle-down"
+                                    style="font-size: 15px;"></i></a>
+                            <div class="dropdown-content active11">
+                                <a href="#">Educational Guidance</a>
+                                <a href="#">Schoolarship</a>
+                                <a href="#">Skill Developement</a>
+                                <a href="#">Quresh Matrimony</a>
+                            </div>
+                        </li>
+                        <li class="active11"><a href="#">Gallery</a></li>
+                        <li class="active11"><a href="#">Membership</a></li>
+                        <li class="active11"><a href="#">Annual Report</a></li>
+                        <li class="active11"><a href="#">Contact Us</a></li>
+                    </ul>
+                    <div class="container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div class="donate-button">
+                        <button style="width: 10em; display: flex; justify-content: center">
+                            DONATE NOW
+
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            <!--  Hamburger-->
+            <div class="newnav font111">
+
+                <ul id="newlist">
+                    <li class="active1" style="margin-top: 2em;"><a href="#">Home</a></li>
+                    <li class="active1"><a href="#">About Us</a></li>
+                    <li class="has-dropdown active1"><a href="#">Governing Body <i class="fa fa-angle-down"
+                                style="font-size: 15px;"></i> </a>
+                        <div class="dropdown-content active1 hamham">
+                            <a href="#">Subitem 1</a>
+                            <a href="#">Subitem 2</a>
+                            <a href="#">Subitem 3</a>
+                        </div>
+                    </li>
+                    <li class="has-dropdown active1"><a href="#">Programs <i class="fa fa-angle-down"
+                                style="font-size: 15px;"></i></a>
+                        <div class="dropdown-content active1">
+                            <a href="#">Subitem 1</a>
+                            <a href="#">Subitem 2</a>
+                            <a href="#">Subitem 3</a>
+                        </div>
+                    </li>
+                    <li class="active1"><a href="#">Gallery</a></li>
+                    <li class="active1"><a href="#">Membership</a></li>
+                    <li class="active1"><a href="#">Annual Report</a></li>
+                    <li class="active1"><a href="#">Contact Us</a></li>
+                </ul>
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="detailcontainer">
+            <div class="leftleft">
+                <div class="profilephoto3"></div>
+
+                <div class="detailshead font111">
+                    <h1>Moin Khaleel Qureshi</h1>
+                    <p>Women's wing President</p>
+                </div>
+                <div class="otherdetails font111">
+                    <h5 class="font1111" style="font-weight: 700;">Contact Us : </h5><br>
+                    <p><i class="fa fa-envelope" style="color:#5044EB"></i> </i>email123@gmail.com</p> <br>
+                    <p><i class="fa fa-phone" style="color: #5044EB;"></i> +91 987654321 </p>
+                </div>
+            </div>
+            <div class="rightright font1111">
+                <div class="font1111 introdetail">I am Moin Khaleel Qureshi the National Women's wing President of Quresh Conference Regd. </div>
+                <div class="font111">
+                    <h2 class="font111" style="font-size: 1.5em;">Other Posts :</h2> <br>
+                    <ul class="lisst">
+                        <li>Secondary Teacher at RIMS International School,Undri, Pune</li>
+                        <li>Assistant Teacher at Bishops Co-Ed School Kalyaninagar, Pune & Assistant Teacher at Kline Memorial School of
+                            UBS in Bibbewadi, Pune94-1995,
+                        </li>
+                        <li>Assistant Teacher at Utkarsh English High School (Camp Education Society) English and Social</li>
+                        <li>Assistant Teacher at HGM Primary School for English and Drawing.</li>
+
+                        <li>Teacher at Nayak Classes and Shamlies Classes</li>
+                        <li>Master of Arts (M.A.) in English from Poona College, Pune University.</li>
+                        <li>Master of Arts (M.A.) in History from Mumbai University.</li>
+                        <li>Bachelor of Education (B.Ed.) from HGM Azzam College, Pune University.</li>
+                        <li>Bachelor of Arts (B.A.) in History and Psychology from Mumbai University</li>
+                        <li>TOEFL and GRE Qualified</li>
+
+
+
+
+
+
+
+                    </ul>
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <!-- This is the next section containing brands -->
+        <div class="rectangle-parent font111">
+            <div class="group-child"></div>
+            <img class="frame-icon" alt="" src="./public/frame.svg" />
+
+            <div class="our-trusted-partner-parent">
+                <b class="our-trusted-partner " id="text12">Our Trusted Partner</b>
+                <div class="mask-group-parent">
+                    <img class="mask-group-icon" alt="" src="./public/mask-group@2x.png" />
+
+                    <img class="mask-group-icon1" alt="" src="./public/mask-group1@2x.png" />
+
+                    <img class="mask-group-icon2" alt="" src="./public/mask-group2@2x.png" />
+
+                    <img class="mask-group-icon3" alt="" src="./public/mask-group3@2x.png" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Next section contains donate now div and footer-->
+
+        <div class="secbf">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+            <div class="t">Start Contributing for<br>better tomorrow</div>
+            <a href="#" class="styled-button">DONATE</a>
+
+        </div>
+
+
+
+
+
+
+        <!-- The Footer begins from here  -->
+
+
+        <footer class="footer">
+            <div class="leftside">
+                <div class="logo11"> </div>
+                <div class="logo2"></div>
+                <div class="subscription-box">
+                    <input type="email" placeholder="Your email"><button onclick="subscribe()">Subscribe</button>
+                </div>
+            </div>
+            <div class="rightside ">
+                <div class="st">
+                    <ul class="font111 styf">
+                        <li><a style="font-weight: 1000; font-size: 1.22em;"> Programs</a></li>
+                        <li><a> Educational Guidance</a></li>
+                        <li><a> SKill Developement</a></li>
+                        <li><a> Scholarship</a></li>
+                        <li><a> Quresh Matrimony</a></li>
+                    </ul>
+                    <ul class="font111 styf">
+                        <li><a style="font-weight: 1000; font-size: 1.22em;"> Platform</a></li>
+                        <li><a> Home</a></li>
+                        <li><a> About us</a></li>
+                        <li><a> Gallery</a></li>
+                        <li><a> Annual Report</a></li>
+                        <li><a> Contact Us</a></li>
+                    </ul>
+                    <ul class="font111 styf">
+                        <li><a style="font-weight: 1000; font-size: 1.22em;"> Contact</a></li>
+                        <li><a> <i class="fa fa-map-marker" aria-hidden="true" style="color: #5044EB;"></i> New Delhi -
+                                110095</a></li>
+                        <li><a><i class="fa fa-phone" style="font-size:16px; color: #5044EB;"></i> +91 9876543210</a>
+                        </li>
+                        <li><a><i class="fa fa-envelope" style="font-size:16px; color: #5044EB;"></i>
+                                Qureshconference@gmail.com</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+
+        </footer>
+        <div class="footerextended font">
+            <hr>
+            &nbsp; &nbsp; &nbsp;| All Rights Reserved
+        </div>
+    </div>
+    <script src="aboutus.js"></script>
+    <script>
+        function subscribe() {
+            alert("Subscribed!");
+        }
+    </script>
+</body>
+
+</html>

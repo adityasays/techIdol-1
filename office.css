@@ -147,27 +147,34 @@ nav ul li a {
 
 /* Styles for the accordion effect */
 .has-dropdown {
-    position: relative;
+  position: relative;
 }
-
 .dropdown-content {
   padding-top: 4px;
-    display: none;
-    opacity: 0.9;
-    position: absolute;
-    top: 100%;
-
-    left: 0;
-    padding-left: 0.4em;
-    background-color: #3400f1;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+  display: none;
+  opacity: 0.9;
+  position: absolute;
+  top: 100%;
+  margin-top: 1px;
+  left: -21px;
+  
+  padding: 13px; /* Added padding for better styling */
+  background-color: #fff; /* Changed background color to white */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px; /* Added border-radius for rounded corners */
+  border: 1px solid #ddd; /* Added border for better visibility */
+  transition: opacity 0.8s ease-in-out; /* Added transition for smoother opacity change */
 }
-
-.has-dropdown.active .dropdown-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+.has-dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px; 
+  white-space: nowrap;
+  opacity: 1; /* Show dropdown with full opacity on hover */
+}
+.has-dropdown.active:hover .dropdown-content {
+  display: none; /* Close the dropdown on hover out */
 }
 
 
