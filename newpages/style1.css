@@ -2764,13 +2764,14 @@ margin-left: 3em;
     flex-wrap: wrap;
 }
 .newer-new-text-np{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-size: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 1.7em;
+  align-content: flex-start;
 }
 .new-header-container{
     display: flex;
@@ -2799,6 +2800,9 @@ margin-left: 3em;
     flex-direction: column;
     margin-bottom: 2em;
 
+}
+.extramar{
+  margin-top: 2em;
 }
 .hcon{
     font-size: 1.2em;
@@ -2858,7 +2862,7 @@ margin-top: 2em;
         flex-direction: column;
     height: 40em;}
         .new-head-text{
-            margin-bottom: 7em;
+            margin-bottom: 9em;
         }
         .new-new-head-text{
             margin-bottom: 16vmax;
@@ -2867,7 +2871,12 @@ margin-top: 2em;
             margin-bottom: 21em;
         }
     
-
+        .newer-new-text-np { 
+          margin-top: 0em ; }
+          .extramar {
+            margin-top: 12em;
+        }
+        .divtext-new { height: 36em;}
 
 }
 
@@ -2885,6 +2894,12 @@ margin-top: 2em;
         .new-middle-part{
             margin-bottom: 21em;
         }
+        .newer-new-text-np { 
+          margin-top: 0em ; }
+          .extramar {
+            margin-top: 12em;
+        }
+        .divtext-new { height: 36em;}
     
 }
 
@@ -2901,7 +2916,12 @@ height: 40em;}
     .new-middle-part{
         margin-bottom: 21em;
     }
-    
+    .newer-new-text-np { 
+      margin-top: 0em ; }
+      .extramar {
+        margin-top: 4em;
+    }
+    .divtext-new { height: 36em;}
 }
 
 /* Styles for screens between 800px and 1000px */
