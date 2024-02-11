@@ -1,4 +1,364 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Crete+Round:ital@1&family=Dosis:wght@500&family=Josefin+Sans:ital,wght@1,300&family=PT+Serif:ital,wght@1,700&family=Raleway&family=Rowdies:wght@700&family=Teko:wght@500;600&family=Work+Sans:wght@500&display=swap");
+.contact-form,
+.contact-form h2,
+.contact-form .sub-heading,
+.contact-form .input-field input,
+.contact-form .input-field textarea {
+    letter-spacing: 1px; /* Adjust the value as needed */
+}
+.contact-form {
+    font-family: 'Noto Sans', sans-serif;
+}
+#footerelem li a {
+  text-decoration: none;
+}
+.input-field label{
+    font-family: 'Noto Sans', sans-serif;
+}
+.contact-form .input-field textarea {
+    
+    padding: 10px; } 
+.contact-form .input-field input,
+.contact-form .input-field textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 10px solid #000000;
+    border-radius: 0; 
+}
+.nogap{
+    gap: 7px !important;
+}
+
+.contact-form .input-group.full-width textarea {
+    height: 120px;
+}
+.input-group{
+    width: 80%;
+    gap: 30px;
+}
+.sub-heading{
+    width: 80%;
+    text-align: center;
+}
+.input-field input{
+    border-radius: none;
+}
+#btnbtn{
+    color: white;
+    background: #5044EB;
+    border-radius: 7px;
+    width: 9em;
+   font-size: 1em;
+}
+#btnbtn:hover{
+    background: blue;
+}
+.contact-form{
+    top: -10em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    gap: 0.5em;
+}
+.centered-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.contact-form h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-form .sub-heading {
+    font-size: 16px;
+}
+
+.contact-form .input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-form .input-group .input-field {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.contact-form .input-group .input-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.contact-form .input-group .input-field input,
+.contact-form .input-group .input-field textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form .input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact-form .input-group.full-width {
+    width: 80%;
+    flex-direction: column;
+}
+
+.contact-form .input-group.full-width textarea {
+    height: 120px;
+}
+
+.white-div{
+    
+    height: 40em;
+    background: white;
+}
+/* new section */
+.flex-container-contact {
+  
+    padding-top: 6em;
+    background: #EAEBFE;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    height: 50em;
+  }
+  
+  .left-side-contact, .right-side-contact {
+    flex: 1;
+    padding: 20px;
+    margin-bottom: 20em;
+    
+  }
+  .left-side-contact h2 {  margin-bottom: 1em;
+  font-weight: 900;}
+  #office{
+    margin-bottom: 0.8em;
+}
+#contact-bottom{
+    margin-top: 1em;
+}
+  .left-side-contact h5 {  margin-bottom: 1em;}
+  .left-side-contact {
+    width: 20em;
+    height: 20em;
+    gap: 3em;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .ss-contact{
+    width: 14em;
+    display: flex;
+    gap: 2em;
+  }
+  .style-contact{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 20px;
+  }
+  .morestyle-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 0.025em;
+  }
+  
+  .right-side-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the address in the left side */
+  .address-contact {
+    line-height: 1.5;
+  }
+  
+  /* Add more styles for the map in the right side */
+  .map-contact {
+    width: 30em;
+    height: 25em;
+    
+  }
+  .newsize{
+    font-size: 1.2rem;
+  }
+  .stylenew{
+      color: #181818;
+  
+  
+      font-family: Noto Sans;
+      font-size: 1.3rem;
+      font-style: normal;
+      font-weight: 500;
+      
+      line-height: normal;
+      
+  }
+  .fontnewer{
+    
+    font-family: Noto Sans;
+    color: #000;
+  font-size: 1em;
+  font-weight: 100;
+    font-style: normal;
+    
+
+  }
+  .headfont{
+      color: #000;
+  
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: normal;
+  }
+  .headfont1{
+      color: #000;
+  
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  font-weight: bolder;
+  line-height: normal;
+  }
+  
+  /* Media query for the middle part */
+  
+  @media screen and (max-width: 400px) {
+    .middle{
+      min-height: 217em;
+    }
+    .flex-container-contact { flex-direction: column;
+      gap: 0.5em;
+    height: 84em;}
+    .address-contact {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .map-contact {
+      width: 20em;
+      height: 11em;
+      
+    }
+    .left-side-contact{
+      text-align: center;
+    }
+   
+  }
+  
+  @media screen and (min-width: 401px) and (max-width: 639px) {
+    .middle{
+      min-height: 222em;
+    }
+    .flex-container-contact { flex-direction: column;
+      gap: 0.5em;
+    height: 84em;}
+    .address-contact {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .address-contact h2{ text-align: center;}
+    .map-contact {
+      width: 24em;
+      height: 15em;
+      
+    }
+    
+  }
+  
+  
+  @media screen and (min-width: 640px) and (max-width: 800px) {
+    .middle{
+      min-height: 110em;
+    }
+    .flex-container-contact { flex-direction: column;
+      gap: 0.5em;
+    height: 84em;}
+    .address-contact {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .address-contact h2{ text-align: center;}
+   
+  }
+  @media screen and (min-width: 801px) and (max-width: 1000px) {
+    .middle{
+      min-height: 109em;
+    }
+    .flex-container-contact { flex-direction: column;
+      gap: 0.5em;
+    height: 84em;}
+    .address-contact {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .address-contact h2{ text-align: center;}
+   
+  }
+  
+  @media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .middle{
+      min-height: 109em;
+    }
+    
+  }
+   
+  
+  @media screen and (min-width: 1201px) and (max-width : 1400px){
+    .middle{
+      min-height: 57em;
+    }
+   
+  }
+  @media screen and (min-width: 1401px) and (max-width: 1600px) {
+    .map-contact {
+      width: 35em;
+      height: 25em;
+      
+    }
+    
+  }
+  
+  
+  @media screen and (min-width: 1601px) {
+    .unit {
+      margin-left: 3.7em;
+    }
+    .map-contact {
+      width: 40em;
+      height: 30em;
+      
+    }
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Crete+Round:ital@1&family=Dosis:wght@500&family=Josefin+Sans:ital,wght@1,300&family=PT+Serif:ital,wght@1,700&family=Raleway&family=Rowdies:wght@700&family=Teko:wght@500;600&family=Work+Sans:wght@500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Crete+Round:ital@1&family=Dosis:wght@500&family=Josefin+Sans:ital,wght@1,300&family=Noto+Sans:ital,wght@1,300&family=PT+Serif:ital,wght@1,700&family=Raleway&family=Rowdies:wght@700&family=Teko:wght@500;600&family=Work+Sans:wght@500&display=swap');
 
 * {
@@ -22,7 +382,7 @@
   color: #000;
 
 font-family: Noto Sans;
-font-size: 1.10rem;
+font-size: 1.07rem;
 font-style: normal;
 
 font-weight: 400;
@@ -737,7 +1097,7 @@ input[type="email"] {
     padding: 10px;
     width: 200px;
     color: #000000;
-    font-weight: bold;
+    
     box-sizing: border-box;
     margin-right: 0;
 }
@@ -1597,9 +1957,6 @@ line-height: normal;
  
 }
 
-#footerelem li a {
-  text-decoration: none;
-}
 @media screen and (min-width: 801px) and (max-width: 900px) {
   .our-trusted-partner-parent {
     position: absolute;

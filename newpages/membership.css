@@ -5,6 +5,9 @@
     padding: 0;
     margin: 0;
 }
+#footerelem li a {
+  text-decoration: none;
+}
 .font{
     font-family: "Anton", sans-serif;
   font-family: "Comfortaa", sans-serif;
@@ -121,6 +124,9 @@ line-height: normal;
 
 display: none;
 
+  }
+  #footerelem li a {
+    text-decoration: none;
   }
   .active1{
     margin-bottom: 1em;

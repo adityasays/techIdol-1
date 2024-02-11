@@ -5,6 +5,9 @@
     padding: 0;
     margin: 0;
 }
+#footerelem li a {
+  text-decoration: none;
+}
 .font{
     font-family: "Anton", sans-serif;
   font-family: "Comfortaa", sans-serif;
@@ -2065,6 +2068,9 @@ line-height: normal;
   gap: 21px !important;
  }
 }
+#footerelem li a {
+  text-decoration: none;
+}
 
 @media screen and (min-width: 801px) and (max-width: 900px) {
   .our-trusted-partner-parent {
@@ -2849,7 +2855,7 @@ margin-top: 2em;
         .new-middle-part{
             margin-bottom: 21em;
         }
-
+        .text-options { margin-left: 0em; }
 }
 
 /* Styles for screens between 400px and 600px */
@@ -2867,7 +2873,7 @@ margin-top: 2em;
             margin-bottom: 21em;
         }
     
-
+        .text-options { margin-left: 0em; }
 
 }
 
@@ -2885,6 +2891,7 @@ margin-top: 2em;
         .new-middle-part{
             margin-bottom: 21em;
         }
+        .text-options { margin-left: 0em; }
     
 }
 
@@ -3091,6 +3098,6 @@ line-height: normal;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
+  width: 95%;
 
 }

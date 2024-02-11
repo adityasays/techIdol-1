@@ -93,6 +93,9 @@
 .container {
   display: none;
 }
+#footerelem li a {
+  text-decoration: none;
+}
 .btnstyle {
   width: 10em;
   display: flex;

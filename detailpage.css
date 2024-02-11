@@ -5,6 +5,7 @@
     font-family: 'Noto Sans';
 }
 
+
 .font1{
 
   color: #000;
@@ -129,6 +130,9 @@ display: none;
   color: #000000;
   text-decoration: none;
 }
+#footerelem li a {
+  text-decoration: none;
+}
 nav {
 background-color: #EAEBFE;
 padding-left: 4.5em;
@@ -136,7 +140,7 @@ height: 4.5em;
 width: 100%;
 display: flex;
 justify-content: center;
-gap: 6.0em;
+gap: 1em;
 align-items: center;
 }
 
@@ -148,7 +152,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 25px;
+  margin-right: 17px;
 }
 
 nav ul li a {
@@ -356,17 +360,31 @@ font-weight: 800;
 line-height: normal;
 letter-spacing: 0.05rem;
  }
- .styf li:not(:first-child){
-  cursor: pointer;
- }
+ 
+ 
  .styf li:first-child {
   font-size: 0.90em;
 }
 
+.styf li:first-child a {
+ 
+  color: black;
+  text-decoration: none;
+}
 
- .styf li:not(:first-child):hover{
+.styf li:not(:first-child) a {
+  
+  color: black;
+  text-decoration: none;
+}
+
+.styf li:not(:first-child) a:hover {
+  
   color: #000ed1;
- }
+  cursor: pointer;
+}
+
+ 
  .head{
     font-size: 2.2em;
     font-weight: bolder;
@@ -1462,7 +1480,7 @@ line-height: normal;
   text-align: center;
 }
 .detailcontainer{
-  min-height: 90em !important;
+  min-height: 104em !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;

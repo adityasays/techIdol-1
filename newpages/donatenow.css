@@ -17,6 +17,9 @@
   font-family: "Teko", sans-serif;
   font-family: "Work Sans", sans-serif;
 }
+#footerelem li a {
+  text-decoration: none;
+}
 .font1{
 
   color: #000;
@@ -121,6 +124,9 @@ line-height: normal;
 
 display: none;
 
+  }
+  #footerelem li a {
+    text-decoration: none;
   }
   .active1{
     margin-bottom: 1em;

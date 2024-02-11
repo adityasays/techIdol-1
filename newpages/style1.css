@@ -5,6 +5,9 @@
     padding: 0;
     margin: 0;
 }
+#footerelem li a {
+  text-decoration: none;
+}
 .font{
     font-family: "Anton", sans-serif;
   font-family: "Comfortaa", sans-serif;
@@ -836,6 +839,9 @@ hr {
    .container{
     display: block;
    }
+   #footerelem li a {
+    text-decoration: none;
+  }
    nav{
     justify-content: start;
     padding-left: 1em;

@@ -17,6 +17,9 @@
   font-family: "Teko", sans-serif;
   font-family: "Work Sans", sans-serif;
 }
+#footerelem li a {
+  text-decoration: none;
+}
 .font1{
 
   color: #000;
@@ -836,6 +839,9 @@ hr {
    .container{
     display: block;
    }
+   #footerelem li a {
+    text-decoration: none;
+  }
    nav{
     justify-content: start;
     padding-left: 1em;

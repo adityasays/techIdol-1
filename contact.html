@@ -2,20 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Office Bearers</title>
-  <link rel="stylesheet" href="office.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css" />
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Product Sans:wght@700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Product Sans:wght@700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const accordionItems = document.querySelectorAll(".has-dropdown");
+      const dropdownItems = document.querySelectorAll('.has-dropdown');
 
-      accordionItems.forEach((item) => {
-        item.addEventListener("click", function () {
-          this.classList.toggle("active");
+      dropdownItems.forEach(item => {
+        item.addEventListener('mouseenter', function () {
+          const dropdownContent = this.querySelector('.dropdown-content');
+          dropdownContent.classList.toggle('active11');
         });
       });
     });
@@ -24,19 +30,24 @@
     function myFunction(x) {
       x.classList.toggle("change");
 
-      const slideContainer = document.getElementsByClassName("newnav")[0];
 
-      slideContainer.style.left =
-        slideContainer.style.left === "0px" ? "-550px" : "0px";
+      const slideContainer = document.getElementsByClassName('newnav')[0];
+
+
+      slideContainer.style.left = (slideContainer.style.left === '0px') ? '-550px' : '0px';
+
     }
   </script>
 </head>
 
 <body>
+  <!-- The start with logo and nav bar -->
   <div class="majorcontainer">
+
     <!--first section ,  this containes logo , navbar and image with text-->
+
     <div class="minorcontainer1">
-      <div class="logo1"></div>
+      <div class="logo1"> </div>
       <div class="navbar font1">
         <nav>
             <ul>
@@ -113,110 +124,89 @@
 
       <div class="pic">
         <div class="picopacity">
-          <div class="pictext font1">
-            Home / Governing Body <br />
-            <h2>Governing Commitee</h2>
+          <div class="pictext font1"> Home / Contact Us <br>
+            <h2>Contact Us</h2>
           </div>
         </div>
       </div>
     </div>
-    <!-- This is the next section (middle section) -->
 
-    <div class="middle">
-      <div class="row">
-        <div class="unit">
-          <div class="unitimage" style="
-                background-image: url('');
-                background-size: cover;
-                background-color: #EAEBFE;
-                background-position: center;
-                background-repeat: no-repeat;
-              "><button class="profilebtn" onclick="redirectToPage('')"> View Profile</button></div>
-          <h2 class="headfont">B.M Yusuf Qureshi</h2>
-          <h4 class="headfont1">National Vice President</h4>
-        </div>
-        <div class="unit">
-          <div class="unitimage" style="
-                background-image: url('');
-                background-size: cover;
-                background-color: #EAEBFE;
-                background-position: center;
-                background-repeat: no-repeat;
-              "> <button class="profilebtn" onclick="redirectToPage('')"> View Profile</button></div>
-          <h2 class="headfont">Haji Afsar Qureshi</h2>
-          <h4 class="headfont1">National Vice President</h4>
+    <!-- This section contains image with text on right side -->
+    <div class="flex-container-contact">
+      <div class="left-side-contact fontnewer">
+        <div class="address-contact newsize">
+          <h2 style="color: #333333; ">Corporate Office </h2>
 
-        </div>
-        <div class="unit">
-          <div class="unitimage" style="
-                background-image: url('');
-                background-size: cover;
-                background-color: #EAEBFE;
-                background-position: center;
-                background-repeat: no-repeat;
-              "> <button class="profilebtn" onclick="redirectToPage('')"> View Profile</button></div>
-          <h2 class="headfont">Faiz Abdullah Qureshi</h2>
-          <h4 class="headfont1">National Vice President</h4>
-        </div>
-        <div class="unit">
-          <div class="unitimage" style="
-                background-image: url('');
-                background-size: cover;
-                background-color: #EAEBFE;
-                background-position: center;
-                background-repeat: no-repeat;
-              "> <button class="profilebtn" onclick="redirectToPage('')"> View Profile</button></div>
-          <h2 class="headfont">Haji Shahzad Qureshi</h2>
-          <h4 class="headfont1">National Vice President</h4>
+          <p id="office" style="color: #333333;font-weight: bold;">Our Office </p>
+          <p style="color: #333333; font-weight: bold;">Surat </p>
+          <p>908, 9th, Rajhans Montessa,<br>Dumas Road, Magdalla,<br>Surat - 395007, Gujarat.</p>
+          <div id="contact-bottom">
+            <div class="style-contact">
+              <div><i class="fa fa-envelope" style="color:aquamarine"></i></div>
+              <div class="morestyle-contact">
+                <p>info@nxtbloc.in</p>
+                <p>Investor.relations@nxtbloc.in</p>
+                <p>compliancesecretary@nxtbloc.in</p>
+              </div>
+            </div>
+
+            <div class="ss-contact"> <i class="fa fa-phone" style="color: aquamarine;"></i>
+              <p>+91 261 2463262-63</p>
+            </div>
+
+
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="unit">
-          <div class="unitimage" style="
-                background-image: url('');
-                background-size: cover;
-                background-color: #EAEBFE;
-                background-position: center;
-                background-repeat: no-repeat;
-              "> <button class="profilebtn" onclick="redirectToPage('')"> View Profile</button></div>
-          <h2 class="headfont">Mufti Salman Qasmi</h2>
-          <h4 class="headfont1">National Vice President</h4>
-        </div>
-        <div class="unit">
-          <div class="unitimage" style="
-                background-image: url('');
-                background-size: cover;
-                background-color: #EAEBFE;
-                background-position: center;
-                background-repeat: no-repeat;
-              "> <button class="profilebtn" onclick="redirectToPage('')"> View Profile</button></div>
-          <h2 class="headfont">Dr. Asif Qureshi</h2>
-          <h4 class="headfont1">National Vice President</h4>
-        </div>
-        <div class="unit">
-          <div class="unitimage" style="
-                background-image: url('');
-                background-size: cover;
-                background-color: #EAEBFE;
-                background-position: center;
-                background-repeat: no-repeat;
-              "><button class="profilebtn" onclick="redirectToPage('')"> View Profile</button></div>
-          <h2 class="headfont">Mohd Saleem Qureshi</h2>
-          <h4 class="headfont1">National Vice President</h4>
-        </div>
-        <div class="unit">
-          <div class="unitimage" style="
-                background-image: url('');
-                background-size: cover;
-                background-position: center;
-                background-color: #EAEBFE;
-                background-repeat: no-repeat;
-              "> <button class="profilebtn" onclick="redirectToPage('')"> View Profile</button></div>
-          <h2 class="headfont">Moin Khaleel Qureshi</h2>
-          <h4 class="headfont1">Women's wing President</h4>
-        </div>
+      <div class="right-side-contact">
+
+        <iframe class="map-contact"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.976844460259!2d-75.16522248523112!3d39.95258379342484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b7c9c774ef71%3A0xc99c456ef87f3f38!2sPhiladelphia%2C%20PA!5e0!3m2!1sen!2sus!4v1605086490055!5m2!1sen!2sus"
+          frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </div>
+
+    <!-- Next section div will come after this-->
+
+    <div class="white-div">
+      <div class="contact-form">
+        <h2 style="margin-top: 1em; font-size: 2.4em; color: #333333;">Get in touch</h2>
+        <p class="sub-heading" style="color: #333333; margin-bottom: 1em;">Our team is happy to address all your
+          queries. Fill out the form and we will be in touch with you as soon as we can.</p>
+        <div class="input-group">
+          <div class="input-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+          </div>
+          <div class="input-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-field">
+            <label for="mobile">Mobile</label>
+            <input type="text" id="mobile" name="mobile" placeholder="Enter your Mobile Number" required>
+          </div>
+          <div class="input-field">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="e.g Amazon">
+          </div>
+        </div>
+        <div class="input-group nogap full-width">
+          <label for="query">Your Query</label>
+          <textarea id="query" name="query" rows="4" placeholder="" required></textarea>
+        </div>
+        <div class="input-group cenered-btn ">
+          <button id="btnbtn" type="submit">Submit</button>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!--   Next section which contains our misson and vision divs-->
+
 
     <!-- This is the next section containing brands -->
     <div class="rectangle-parent font">
@@ -244,11 +234,16 @@
       <div class="circle2"></div>
       <div class="circle3"></div>
       <div class="circle4"></div>
-      <div class="t">Start Contributing for<br />better tomorrow</div>
+      <div class="t">Start Contributing for<br>better tomorrow</div>
       <a href="#" class="styled-button">DONATE</a>
+
     </div>
 
+
+
+
     <!-- The Footer begins from here  -->
+
 
     <footer class="footer">
       <div class="leftside">
@@ -294,7 +289,7 @@
 
     </footer>
     <div class="footerextended font">
-      <hr />
+      <hr>
       &nbsp; &nbsp; &nbsp;| All Rights Reserved
     </div>
   </div>
@@ -302,12 +297,6 @@
   <script>
     function subscribe() {
       alert("Subscribed!");
-    }
-  </script>
-  <script>
-    function redirectToPage(page) {
-      // Redirecting to the specified HTML page
-      window.location.href = page;
     }
   </script>
 </body>

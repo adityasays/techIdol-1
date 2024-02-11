@@ -1,403 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="homepage.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Product Sans:wght@700&display=swap"
-    />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          const accordionItems = document.querySelectorAll('.has-dropdown');
 
-          accordionItems.forEach(item => {
-              item.addEventListener('click', function () {
-                  this.classList.toggle('active');
-              });
-          });
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="homepage.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Product Sans:wght@700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const accordionItems = document.querySelectorAll('.has-dropdown');
+
+      accordionItems.forEach(item => {
+        item.addEventListener('click', function () {
+          this.classList.toggle('active');
+        });
       });
+    });
   </script>
   <script>
     function myFunction(x) {
       x.classList.toggle("change");
-    
-    
-    const slideContainer = document.getElementsByClassName('newnav')[0];
 
-  
-        slideContainer.style.left = (slideContainer.style.left === '0px') ? '-550px' : '0px';
-    
+
+      const slideContainer = document.getElementsByClassName('newnav')[0];
+
+
+      slideContainer.style.left = (slideContainer.style.left === '0px') ? '-550px' : '0px';
+
     }
-    </script>
+  </script>
 </head>
+
 <body>
-    <div class="majorcontainer">
-        <!--first section ,  this containes logo , navbar and image with text-->
-        <div class="minorcontainer1">
-            <div class="logo1"> </div>
-            <div class="navbar font1">
-              <nav id="naves" >
-                  <ul>
-                      <li class="active11"><a href="#">Home</a></li>
-                      <li class="active11"><a href="../aboutus.html">About Us</a></li>
-                      <li class="has-dropdown active11"><a href="#">Governing Body <i class="fa fa-angle-down" style="font-size: 15px;"></i>  </a>
-                          <div class="dropdown-content active11">
-                              <a href="../office.html">Office Bearers</a>
-                              <a href="../commitee.html">Governing Commitee</a>
-                              
-                          </div>
-                      </li>
-                      <li class="has-dropdown active11"><a href="/programes.html">Programs <i class="fa fa-angle-down" style="font-size: 15px;"></i></a>
-                          <div class="dropdown-content active11">
-                              <a  href="/newpages/education-guidance.html">Educational Guidance</a>
-                              <a href="/newpages/scholarship.html">Schoolarship</a>
-                              <a href="#">Skill Developement</a>
-                              <a href="#">Quresh Matrimony</a>
-                          </div>
-                      </li>
-                      <li class="active11"><a href="/newpages/photogallery.html">Gallery</a></li>
-                      <li class="active11"><a href="#">Membership</a></li>
-                      <li class="active11"><a href="#">Annual Report</a></li>
-                      <li class="active11"><a href="#">Contact Us</a></li>
-                  </ul>
-                  <div class="container" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                  </div>
-                  <div class="donate-button">
-                    <button id="firstbutton">
-                        DONATE NOW
-                       
-                    </button>
-                </div>
-              </nav>
-          </div>
-         <!--  Hamburger-->
-          <div class="newnav font1">
-            
-              <ul>
-                  <li class="active1" style="margin-top: 2em;"><a href="#">Home</a></li>
-                  <li class="active1"><a href="/aboutus.html">About Us</a></li>
-                  <li class="has-dropdown active1"><a href="#">Governing Body <i class="fa fa-angle-down" style="font-size: 15px;"></i>  </a>
-                      <div class="dropdown-content active1">
-                          <a href="#">Subitem 1</a>
-                          <a href="#">Subitem 2</a>
-                          <a href="#">Subitem 3</a>
-                      </div>
-                  </li>
-                  <li class="has-dropdown active1"><a href="#">Programs <i class="fa fa-angle-down" style="font-size: 15px;"></i></a>
-                      <div class="dropdown-content active1">
-                          <a href="#">Subitem 1</a>
-                          <a href="#">Subitem 2</a>
-                          <a href="#">Subitem 3</a>
-                      </div>
-                  </li>
-                  <li class="active1"><a href="/newpages/photogallery.html">Gallery</a></li>
-                  <li class="active1"><a href="#">Membership</a></li>
-                  <li class="active1"><a href="../report.html">Annual Report</a></li>
-                  <li class="active1"><a href="#">Contact Us</a></li>
-              </ul>
+  <div class="majorcontainer">
+    <!--first section ,  this containes logo , navbar and image with text-->
+    <div class="minorcontainer1">
+      <div class="logo1"> </div>
+      <div class="navbar font1">
+        <nav id="naves">
+          <ul>
+            <li class="active11"><a href="/homepage/homepage.html">Home</a></li>
+            <li class="active11"><a href="../aboutus.html">About Us</a></li>
+            <li class="has-dropdown active11"><a href="#">Governing Body <i class="fa fa-angle-down"
+                  style="font-size: 15px;"></i> </a>
+              <div class="dropdown-content active11">
+                <a href="../office.html">Office Bearers</a>
+                <a href="../commitee.html">Governing Commitee</a>
 
-              
-              
-          
-
-          </div> 
-
-          <!--  normal flow-->
-            <!--<div class="pic"> <div class="pictext font1"> Home / About us <br> <h2>About Us</h2> </div></div>-->
-            <div class="carousel-container-home">
-              <div class="text-home1">
-                <h3> Reimagine the Future </h3>
-                <h3> Education </h3>
-                <p style="color: white; font-size: larger;">Lorem ipsum dolor sit amet consectetur adipisicing elit <br>dicta
-                  eum delectus laudantium et maxime dolores.</p>
-      
               </div>
-                <div class="carousel-home">
-                  <img src="hands.jpg" alt="Image 1">
-                  <img src="health.jpg" alt="Image 2">
-                  <img src="image1.jpg" alt="Image 3">
-                  <img src="image2.jpg" alt="Image 4">
-                </div>
-                <button class="arrow-home arrow-left-home" onclick="prevSlideHome()">&#9665;</button>
-                <button class="arrow-home arrow-right-home" onclick="nextSlideHome()">&#9655;</button>
+            </li>
+            <li class="has-dropdown active11"><a href="/programes.html">Programs <i class="fa fa-angle-down"
+                  style="font-size: 15px;"></i></a>
+              <div class="dropdown-content active11">
+                <a href="/newpages/education-guidance.html">Educational Guidance</a>
+                <a href="/newpages/scholarship.html">Schoolarship</a>
+                <a href="/newpages/skilldevelopement.html">Skill Developement</a>
+                <a href="#">Quresh Matrimony</a>
               </div>
-              
-        </div>
-        <!-- This section contains image below-->
-        <div class="flex-container-home" id="section2">
-            <div class="box-home"> <div class="circle-home circle-image1"> </div> <div class="text-home font1"> <h4>President Name</h4><p style="font-style: italic;">President</p></div> </div>
-            <div class="box-home"><div class="circle-home circle-image2"> </div><div class="text-home font1"> <h4>Vice President Name</h4><p style="font-style: italic;">Vice President</p></div> </div>
-            <div class="box-home"><div class="circle-home circle-image3"> </div><div class="text-home font1"> <h4>Secretary Name</h4><p style="font-style: italic;">Secretary</p></div> </div>
-            <div class="box-home"><div class="circle-home circle-image4"> </div><div class="text-home font1"> <h4>Moin Khaleel Qureshi</h4><p style="font-style: italic;">Women's Wing President</p></div> </div>
+            </li>
+            <li class="active11"><a href="/newpages/photogallery.html">Gallery</a></li>
+            <li class="active11"><a href="/newpages/membership.html">Membership</a></li>
+            <li class="active11"><a href="/report.html">Annual Report</a></li>
+            <li class="active11"><a href="/contact.html">Contact Us</a></li>
+          </ul>
+          <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
+          <div class="donate-button">
+            <button id="firstbutton">
+              DONATE NOW
 
-        <!-- This section contains image with text on right side -->
-<div class="nextsection-container">
-  <div class="hed  ">
-    <h1 class="underrline-text ">About Us</h1>
-  </div>
-   <div class="nextsection"> 
-  <div class="leftsection" id="slideUpElement2"> 
-    <div class="rect"></div>
-     <div class="photo1"></div>
-     <div class="photo2"></div>
-      
-  
-</div>
-  <div class="rightsection ">
-   
-   <div class="head font"> We are the NGO that helps the <br> Needy ones</div>
- <div class="txt font2"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit amet.<br> Lorem ipsum dolor sit amet. </div>
- <div class="section font" id="slideUpElement3">       
-    
-    <div class="head"> Our Mission</div>
-    <div class="txt"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Accusamus sit iure,  adipisci perspiciatis?</div>
-
-  </div>
-  <div class="section font" id="slideUpElement4"> 
-  <div class="head"> Our Vision</div>
-  <div class="txt"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Accusamus sit iure,  adipisci perspiciatis?</div> </div>
-
-</div>
-  
-   </div></div>
-
-
-  <!-- Next section div will come after this-->
-
-
-  <div class="bluebreaker bb" id="scrollableSection">
-    <div class="cont font"
-    style="display: flex; flex-direction: column ; justify-content: center; align-items: center; gap: 1em; height: 100%;">
-    <div style="display: flex; justify-content: center; align-items: center; gap:0.5em">
-      <div style="font-weight: 900; font-size: 4em;" id="counter2">0</div>
-      <div style="color: #5044EB; font-size: 3em; font-weight: 900; margin-top: 4px;">yr</div>
-    </div>
-    <div class="text2">15 years of working<br>
-        experince</div>
-
-  </div>
-    <div class="linee"></div>
-    <div class="cont font">
-      <div style="display: flex; justify-content: center; align-items: center; gap:0.5em">
-        <div style="font-weight: 900; font-size: 4em;"id="counter">0</div>
-        <div style="color: #5044EB; font-size: 3em; font-weight: 900; margin-top: 4px;">+</div>
-      </div>
-      <div class="text2 font">500 above volunteers<br>
-        are available</div>
-
-    </div>
-    <div class="linee"></div>
-
-    <div class="cont font"
-    style="display: flex; flex-direction: column ; justify-content: center; align-items: center; gap: 1em; height: 100%;">
-    <div style="display: flex; justify-content: center; align-items: center; gap:0.5em">
-      <div style="font-weight: 900; font-size: 4em;"id="counter3">1</div>
-      <div style="color: #5044EB; font-size: 3em; font-weight: 900; margin-top: 4px;">M</div>
-    </div>
-    <div class="text2">$1 million money raises<br>
-        for needy ones</div>
-
-  </div>
-
-  </div>
-  <!--   Next section-->
-
-  <div class="cause-container">
-    <div class="hed ">
-      <h1 class="underrline-text">Recent causes</h1>
-    </div>
-    <div class="text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae quod eius sequi voluptas,<br>
-      pariatur autem vel ex suscipit amet reprehenderit!</div>
-
-    <div class="blocs">
-      <div class="blc">
-        <div class="ph"> </div>
-        <div class="headin">DONATE FOR EDUCATION </div>
-        <div class="para"> Lorem ipsum dolor sit amet, consectetur<br>
-          adipiscing elit, sed do eiusmod tempor <br>
-          adipiscing elit, sed do eiusmod tempor<br>
-          Lorem ipsum dolor sit amet, consect</div>
-        <div class="bh">
-          <div> Raised : $500 </div>
-          <div> Goal : $800</div>
-        </div>
-        <div class="loading-bar">
-          <div class="fill"></div>
-        </div>
-      </div>
-      <div class="blc">
-        <div class="ph1"> </div>
-        <div class="headin">DONATE FOR HEALTH </div>
-        <div class="para"> Lorem ipsum dolor sit amet, consectetur<br>
-          adipiscing elit, sed do eiusmod tempor <br>
-          adipiscing elit, sed do eiusmod tempor<br>
-          Lorem ipsum dolor sit amet, consect</div>
-        <div class="bh">
-          <div> Raised : $500 </div>
-          <div> Goal : $800</div>
-        </div>
-        <div class="loading-bar">
-          <div class="fill"></div>
-        </div>
-      </div>
-      <div class="blc">
-        <div class="ph2"> </div>
-        <div class="headin">DONATE FOR MATRIMONY </div>
-        <div class="para"> Lorem ipsum dolor sit amet, consectetur<br>
-          adipiscing elit, sed do eiusmod tempor <br>
-          adipiscing elit, sed do eiusmod tempor<br>
-          Lorem ipsum dolor sit amet, consect</div>
-        <div class="bh">
-          <div> Raised : $500 </div>
-          <div> Goal : $800</div>
-        </div>
-        <div class="loading-bar">
-          <div class="fill"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!-- next section-->
-
-<div class="opinion-container  "  id="section">
-  <div class="hed">
-    <h1 class="underrline-text">What People Say</h1>
-  </div>
-  <div class="text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae quod eius sequi voluptas,<br>
-    pariatur autem vel ex suscipit amet reprehenderit!</div>
-    <div class="left-arrow" onclick="changeReview(-1)"><i class="fas fa-chevron-left"></i></div>
-    <div class="right-arrow" onclick="changeReview(1)"><i class="fas fa-chevron-right"></i></div>
-  <div class="review-container">
-
-   
-    <div class="review-insider">
-
-      <div class="review">
-        <div class="sign" style="display: flex; justify-content: left; padding-left: 10px;"> <i
-            class="fa fa-quote-left" style="font-size:48px;color:rgb(0, 17, 255)"></i></div>
-        <div class="txtt"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Quam nulla sit impedit
-          illum
-          quis voluptatibus saepe,<br> voluptatem fugit maiores! Suscipit!
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          saepe </div>
-        <div class="phname">
-          <div class="foto"></div>
-          <div class="phdetails">
-            <span style="font-size: large;"> Karelena Marin </span>
-            <span style="font-size: small;">Bank Manager</span>
+            </button>
           </div>
-        </div>
+        </nav>
+      </div>
+      <!--  Hamburger-->
+      <div class="newnav font1">
+
+        <ul>
+          <li class="active1" style="margin-top: 2em;"><a href="#">Home</a></li>
+          <li class="active1"><a href="/aboutus.html">About Us</a></li>
+          <li class="has-dropdown active1"><a href="#">Governing Body <i class="fa fa-angle-down"
+                style="font-size: 15px;"></i> </a>
+            <div class="dropdown-content active1">
+              <a href="/office.html">Office Bearers</a>
+              <a href="/commitee.html">Governing Committee</a>
+
+            </div>
+          </li>
+          <li class="has-dropdown active1"><a href="#">Programs <i class="fa fa-angle-down"
+                style="font-size: 15px;"></i></a>
+            <div class="dropdown-content active1">
+              <a href="/newpages/education-guidance.html">Educational Guidance</a>
+              <a href="/newpages/skilldevelopement.html">Skill Developement</a>
+              <a href="#">Quresh Matrimony</a>
+            </div>
+          </li>
+          <li class="active1"><a href="/newpages/photogallery.html">Gallery</a></li>
+          <li class="active1"><a href="/newpages/membership.html">Membership</a></li>
+          <li class="active1"><a href="../report.html">Annual Report</a></li>
+          <li class="active1"><a href="/contact.html">Contact Us</a></li>
+        </ul>
+
+
+
+
+
       </div>
 
+      <!--  normal flow-->
+      <!--<div class="pic"> <div class="pictext font1"> Home / About us <br> <h2>About Us</h2> </div></div>-->
+      <div class="carousel-container-home">
+        <div class="text-home1">
+          <h3> Reimagine the Future </h3>
+          <h3> Education </h3>
+          <p style="color: white; font-size: larger;">Lorem ipsum dolor sit amet consectetur adipisicing elit <br>dicta
+            eum delectus laudantium et maxime dolores.</p>
 
-      <div class="review">
-        <div class="sign" style="display: flex; justify-content: left; padding-left: 10px;"> <i
-            class="fa fa-quote-left" style="font-size:48px;color:rgb(0, 17, 255)"></i></div>
-        <div class="txtt"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Quam nulla sit impedit
-          illum
-          quis voluptatibus saepe,<br> voluptatem fugit maiores! Suscipit!
-          Lorem ipsum dolor sit,  elit.
-          saepe </div>
-        <div class="phname">
-          <div class="foto"></div>
-          <div class="phdetails">
-            <span style="font-size: large;"> John Doe </span>
-            <span style="font-size: small;">Software Engineer</span>
+        </div>
+        <div class="carousel-home">
+          <img src="hands.jpg" alt="Image 1">
+          <img src="health.jpg" alt="Image 2">
+          <img src="image1.jpg" alt="Image 3">
+          <img src="image2.jpg" alt="Image 4">
+        </div>
+        <button class="arrow-home arrow-left-home" onclick="prevSlideHome()">&#9665;</button>
+        <button class="arrow-home arrow-right-home" onclick="nextSlideHome()">&#9655;</button>
+      </div>
+
+    </div>
+    <!-- This section contains image below-->
+    <div class="flex-container-home" id="section2">
+      <div class="box-home">
+        <div class="circle-home circle-image1"> </div>
+        <div class="text-home font1">
+          <h4>President Name</h4>
+          <p style="font-style: italic;">President</p>
+        </div>
+      </div>
+      <div class="box-home">
+        <div class="circle-home circle-image2"> </div>
+        <div class="text-home font1">
+          <h4>Vice President Name</h4>
+          <p style="font-style: italic;">Vice President</p>
+        </div>
+      </div>
+      <div class="box-home">
+        <div class="circle-home circle-image3"> </div>
+        <div class="text-home font1">
+          <h4>Secretary Name</h4>
+          <p style="font-style: italic;">Secretary</p>
+        </div>
+      </div>
+      <div class="box-home">
+        <div class="circle-home circle-image4"> </div>
+        <div class="text-home font1">
+          <h4>Moin Khaleel Qureshi</h4>
+          <p style="font-style: italic;">Women's Wing President</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- This section contains image with text on right side -->
+    <div class="nextsection-container">
+      <div class="hed  ">
+        <h1 class="underrline-text ">About Us</h1>
+      </div>
+      <div class="nextsection">
+        <div class="leftsection" id="slideUpElement2">
+          <div class="rect"></div>
+          <div class="photo1"></div>
+          <div class="photo2"></div>
+
+
+        </div>
+        <div class="rightsection ">
+
+          <div class="head font"> We are the NGO that helps the <br> Needy ones</div>
+          <div class="txt font2"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit
+            amet.<br> Lorem ipsum dolor sit amet. </div>
+          <div class="section font" id="slideUpElement3">
+
+            <div class="head"> Our Mission</div>
+            <div class="txt"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Accusamus sit iure, adipisci
+              perspiciatis?</div>
+
           </div>
-        </div>
-      </div>
-
-      <div class="review">
-        <div class="sign" style="display: flex; justify-content: left; padding-left: 10px;"> <i
-            class="fa fa-quote-left" style="font-size:48px;color:rgb(0, 17, 255)"></i></div>
-        <div class="txtt"> Lorem ipsum  adipisicing elit.<br> Quam nulla sit impedit
-          illum
-          quis voluptatibus saepe,<br> voluptatem fugit maiores! Suscipit!
-          Lorem ipsum dolor sit, 
-          saepe </div>
-        <div class="phname">
-          <div class="foto"></div>
-          <div class="phdetails">
-            <span style="font-size: large;"> Jane Smith </span>
-            <span style="font-size: small;">Marketing Specialist</span>
+          <div class="section font" id="slideUpElement4">
+            <div class="head"> Our Vision</div>
+            <div class="txt"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Accusamus sit iure, adipisci
+              perspiciatis?</div>
           </div>
 
         </div>
+
+      </div>
+    </div>
+
+
+    <!-- Next section div will come after this-->
+
+
+    <div class="bluebreaker bb" id="scrollableSection">
+      <div class="cont font"
+        style="display: flex; flex-direction: column ; justify-content: center; align-items: center; gap: 1em; height: 100%;">
+        <div style="display: flex; justify-content: center; align-items: center; gap:0.5em">
+          <div style="font-weight: 900; font-size: 4em;" id="counter2">0</div>
+          <div style="color: #5044EB; font-size: 3em; font-weight: 900; margin-top: 4px;">yr</div>
+        </div>
+        <div class="text2">15 years of working<br>
+          experince</div>
+
+      </div>
+      <div class="linee"></div>
+      <div class="cont font">
+        <div style="display: flex; justify-content: center; align-items: center; gap:0.5em">
+          <div style="font-weight: 900; font-size: 4em;" id="counter">0</div>
+          <div style="color: #5044EB; font-size: 3em; font-weight: 900; margin-top: 4px;">+</div>
+        </div>
+        <div class="text2 font">500 above volunteers<br>
+          are available</div>
+
+      </div>
+      <div class="linee"></div>
+
+      <div class="cont font"
+        style="display: flex; flex-direction: column ; justify-content: center; align-items: center; gap: 1em; height: 100%;">
+        <div style="display: flex; justify-content: center; align-items: center; gap:0.5em">
+          <div style="font-weight: 900; font-size: 4em;" id="counter3">1</div>
+          <div style="color: #5044EB; font-size: 3em; font-weight: 900; margin-top: 4px;">M</div>
+        </div>
+        <div class="text2">$1 million money raises<br>
+          for needy ones</div>
+
       </div>
 
-      <div class="review">
-        <div class="sign" style="display: flex; justify-content: left; padding-left: 10px;"> <i
-            class="fa fa-quote-left" style="font-size:48px;color:rgb(0, 17, 255)"></i></div>
-        <div class="txtt"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Quam nulla sit impedit
-          illum
-          quis voluptatibus saepe,<br> voluptatem fug
-          Lorem ipsum dolor sit
-          saepe </div>
-        <div class="phname">
-          <div class="foto"></div>
-          <div class="phdetails">
-            <span style="font-size: large;"> Alex Johnson </span>
-            <span style="font-size: small;">Designer</span>
+    </div>
+    <!--   Next section-->
+
+    <div class="cause-container">
+      <div class="hed ">
+        <h1 class="underrline-text">Recent causes</h1>
+      </div>
+      <div class="text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae quod eius sequi voluptas,<br>
+        pariatur autem vel ex suscipit amet reprehenderit!</div>
+
+      <div class="blocs">
+        <div class="blc">
+          <div class="ph"> </div>
+          <div class="headin">DONATE FOR EDUCATION </div>
+          <div class="para"> Lorem ipsum dolor sit amet, consectetur<br>
+            adipiscing elit, sed do eiusmod tempor <br>
+            adipiscing elit, sed do eiusmod tempor<br>
+            Lorem ipsum dolor sit amet, consect</div>
+          <div class="bh">
+            <div> Raised : $500 </div>
+            <div> Goal : $800</div>
+          </div>
+          <div class="loading-bar">
+            <div class="fill"></div>
+          </div>
+        </div>
+        <div class="blc">
+          <div class="ph1"> </div>
+          <div class="headin">DONATE FOR HEALTH </div>
+          <div class="para"> Lorem ipsum dolor sit amet, consectetur<br>
+            adipiscing elit, sed do eiusmod tempor <br>
+            adipiscing elit, sed do eiusmod tempor<br>
+            Lorem ipsum dolor sit amet, consect</div>
+          <div class="bh">
+            <div> Raised : $500 </div>
+            <div> Goal : $800</div>
+          </div>
+          <div class="loading-bar">
+            <div class="fill"></div>
+          </div>
+        </div>
+        <div class="blc">
+          <div class="ph2"> </div>
+          <div class="headin">DONATE FOR MATRIMONY </div>
+          <div class="para"> Lorem ipsum dolor sit amet, consectetur<br>
+            adipiscing elit, sed do eiusmod tempor <br>
+            adipiscing elit, sed do eiusmod tempor<br>
+            Lorem ipsum dolor sit amet, consect</div>
+          <div class="bh">
+            <div> Raised : $500 </div>
+            <div> Goal : $800</div>
+          </div>
+          <div class="loading-bar">
+            <div class="fill"></div>
           </div>
         </div>
       </div>
-    </div>-->
-
-  </div>
-</div>
-
-
-
-  
-<!-- This is the next section containing brands -->
-
-
-
-<div class="rectangle-parent font" id="section">
-  <div class="group-child"></div>
-  <img class="frame-icon" alt="" src="./public/frame.svg" />
-
-  <div class="our-trusted-partner-parent">
-    <b class="our-trusted-partner">Our Trusted Partner</b>
-    <div class="mask-group-parent">
-      <img
-        class="mask-group-icon"
-        alt=""
-        src="./public/mask-group@2x.png"
-      />
-
-      <img
-        class="mask-group-icon1"
-        alt=""
-        src="./public/mask-group1@2x.png"
-      />
-
-      <img
-        class="mask-group-icon2"
-        alt=""
-        src="./public/mask-group2@2x.png"
-      />
-
-      <img
-        class="mask-group-icon3"
-        alt=""
-        src="./public/mask-group3@2x.png"
-      />
     </div>
-  </div>
-</div>  
-<!--
+
+    <!-- next section-->
+
+    <div class="opinion-container  " id="section">
+      <div class="hed">
+        <h1 class="underrline-text">What People Say</h1>
+      </div>
+      <div class="text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae quod eius sequi voluptas,<br>
+        pariatur autem vel ex suscipit amet reprehenderit!</div>
+      <div class="left-arrow" onclick="changeReview(-1)"><i class="fas fa-chevron-left"></i></div>
+      <div class="right-arrow" onclick="changeReview(1)"><i class="fas fa-chevron-right"></i></div>
+      <div class="review-container">
+
+
+        <div class="review-insider">
+
+          <div class="review">
+            <div class="sign" style="display: flex; justify-content: left; padding-left: 10px;"> <i
+                class="fa fa-quote-left" style="font-size:48px;color:rgb(0, 17, 255)"></i></div>
+            <div class="txtt"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Quam nulla sit impedit
+              illum
+              quis voluptatibus saepe,<br> voluptatem fugit maiores! Suscipit!
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              saepe </div>
+            <div class="phname">
+              <div class="foto"></div>
+              <div class="phdetails">
+                <span style="font-size: large;"> Karelena Marin </span>
+                <span style="font-size: small;">Bank Manager</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="review">
+            <div class="sign" style="display: flex; justify-content: left; padding-left: 10px;"> <i
+                class="fa fa-quote-left" style="font-size:48px;color:rgb(0, 17, 255)"></i></div>
+            <div class="txtt"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Quam nulla sit impedit
+              illum
+              quis voluptatibus saepe,<br> voluptatem fugit maiores! Suscipit!
+              Lorem ipsum dolor sit, elit.
+              saepe </div>
+            <div class="phname">
+              <div class="foto"></div>
+              <div class="phdetails">
+                <span style="font-size: large;"> John Doe </span>
+                <span style="font-size: small;">Software Engineer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review">
+            <div class="sign" style="display: flex; justify-content: left; padding-left: 10px;"> <i
+                class="fa fa-quote-left" style="font-size:48px;color:rgb(0, 17, 255)"></i></div>
+            <div class="txtt"> Lorem ipsum adipisicing elit.<br> Quam nulla sit impedit
+              illum
+              quis voluptatibus saepe,<br> voluptatem fugit maiores! Suscipit!
+              Lorem ipsum dolor sit,
+              saepe </div>
+            <div class="phname">
+              <div class="foto"></div>
+              <div class="phdetails">
+                <span style="font-size: large;"> Jane Smith </span>
+                <span style="font-size: small;">Marketing Specialist</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="review">
+            <div class="sign" style="display: flex; justify-content: left; padding-left: 10px;"> <i
+                class="fa fa-quote-left" style="font-size:48px;color:rgb(0, 17, 255)"></i></div>
+            <div class="txtt"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Quam nulla sit impedit
+              illum
+              quis voluptatibus saepe,<br> voluptatem fug
+              Lorem ipsum dolor sit
+              saepe </div>
+            <div class="phname">
+              <div class="foto"></div>
+              <div class="phdetails">
+                <span style="font-size: large;"> Alex Johnson </span>
+                <span style="font-size: small;">Designer</span>
+              </div>
+            </div>
+          </div>
+        </div>-->
+
+      </div>
+    </div>
+
+
+
+
+    <!-- This is the next section containing brands -->
+
+
+
+    <div class="rectangle-parent font" id="section">
+      <div class="group-child"></div>
+      <img class="frame-icon" alt="" src="./public/frame.svg" />
+
+      <div class="our-trusted-partner-parent">
+        <b class="our-trusted-partner">Our Trusted Partner</b>
+        <div class="mask-group-parent">
+          <img class="mask-group-icon" alt="" src="./public/mask-group@2x.png" />
+
+          <img class="mask-group-icon1" alt="" src="./public/mask-group1@2x.png" />
+
+          <img class="mask-group-icon2" alt="" src="./public/mask-group2@2x.png" />
+
+          <img class="mask-group-icon3" alt="" src="./public/mask-group3@2x.png" />
+        </div>
+      </div>
+    </div>
+    <!--
 <div class="homepageMainContainer">
   <div class="homepageLeftDiv font">
       <h5>Our Trusted <br> Partners</h5>
@@ -410,77 +426,86 @@
   </div>
 </div>
 -->
-<!-- Next section contains donate now div and footer-->
+    <!-- Next section contains donate now div and footer-->
 
-<div class="secbf" id="slideUpElement">    
-<div class="circle1"></div>
-<div class="circle2"></div>
-<div class="circle3"></div>
-<div class="circle4"></div>
-  <div class="t">Start Contributing for<br>better tomorrow</div>
-  <a href="#" class="styled-button">DONATE</a>
+    <div class="secbf" id="slideUpElement">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+      <div class="circle4"></div>
+      <div class="t">Start Contributing for<br>better tomorrow</div>
+      <a href="#" class="styled-button">DONATE</a>
 
-</div>
-
- 
-
-
- <!-- The Footer begins from here  -->
-
-
- <footer class="footer">
-  <div class="leftside">
-    <div class="logo11"> </div>
-    <div class="logo2"></div>
-    <div class="subscription-box">
-      <input type="email" placeholder="Your email"><button onclick="subscribe()">Subscribe</button>
-  </div>
-  </div>
-  <div class="rightside "> 
-      <div class="st"><ul class="font111 styf" id="footerelem"> <li><a style="font-weight: 1000; font-size: 1.22em;"> Programs</a></li>
-          <li><a> Educational Guidance</a></li>
-          <li><a> Skill Developement</a></li>
-          <li><a> Scholarship</a></li>
-          <li><a> Quresh Matrimony</a></li>
-      </ul>  <ul class="font111 styf" id="footerelem"> <li><a style="font-weight: 1000; font-size: 1.22em;"> Platform</a></li>
-          <li><a> Home</a></li>
-          <li><a> About us</a></li>
-          <li><a> Gallery</a></li>
-          <li><a> Annual Report</a></li>
-          <li><a> Contact Us</a></li>
-      </ul>  <ul class="font111 styf" id="footerelem"> <li><a style="font-weight: 1000; font-size: 1.22em;"> Contact</a></li>
-          <li><a> <i class="fa fa-map-marker" aria-hidden="true" style="color: #5044EB;"></i> New Delhi - 110095</a></li>
-          <li><a><i class="fa fa-phone" style="font-size:16px; color: #5044EB;"></i>  +91 9876543210</a></li>
-          <li><a><i class="fa fa-envelope" style="font-size:16px; color: #5044EB;"></i> Qureshconference@gmail.com</a></li>
-          
-      </ul></div>
-  </div>
-   
-  
-  
-  
-  
-  
-  </footer>
-<div class="footerextended font"> 
-  <hr > 
-  &nbsp; &nbsp; &nbsp;| All Rights Reserved
-</div>
     </div>
-    <script src="aboutus.js"></script>
-    <script>
-      function subscribe() { 
-          alert("Subscribed!");
-      }
+
+
+
+
+    <!-- The Footer begins from here  -->
+
+
+    <footer class="footer">
+      <div class="leftside">
+        <div class="logo11"> </div>
+        <div class="logo2"></div>
+        <div class="subscription-box">
+          <input type="email" placeholder="Your email"><button onclick="subscribe()">Subscribe</button>
+        </div>
+      </div>
+      <div class="rightside ">
+        <div class="st">
+          <ul class="font111 styf" id="footerelem">
+            <li><a style="font-weight: 1000; font-size: 1.22em;"> Programs</a></li>
+            <li><a href="/newpages/education-guidance.html"> Educational Guidance</a></li>
+            <li><a href="/newpages/skilldevelopement.html"> Skill Developement</a></li>
+            <li><a href="/newpages/scholarship.html"> Scholarship</a></li>
+            <li><a href="#"> Quresh Matrimony</a></li>
+          </ul>
+          <ul class="font111 styf" id="footerelem">
+            <li><a style="font-weight: 1000; font-size: 1.22em;"> Platform</a></li>
+            <li><a href="/homepage/homepage.html"> Home</a></li>
+            <li><a href="/aboutus.html"> About us</a></li>
+            <li><a href="/newpages/photogallery.html"> Gallery</a></li>
+            <li><a href="/report.html"> Annual Report</a></li>
+            <li><a href="/contact.html"> Contact Us</a></li>
+          </ul>
+          <ul class="font111 styf" id="footerelem">
+            <li><a style="font-weight: 1000; font-size: 1.22em;"> Contact</a></li>
+            <li><a> <i class="fa fa-map-marker" aria-hidden="true" style="color: #5044EB;"></i> New Delhi - 110095</a>
+            </li>
+            <li><a><i class="fa fa-phone" style="font-size:16px; color: #5044EB;"></i> +91 9876543210</a></li>
+            <li><a><i class="fa fa-envelope" style="font-size:16px; color: #5044EB;"></i> Qureshconference@gmail.com</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+
+
+
+
+
+    </footer>
+    <div class="footerextended font">
+      <hr>
+      &nbsp; &nbsp; &nbsp;| All Rights Reserved
+    </div>
+  </div>
+  <script src="aboutus.js"></script>
+  <script>
+    function subscribe() {
+      alert("Subscribed!");
+    }
   </script>
   <script>
     let currentIndexHome = 0;
-  
+
     function showSlideHome(index) {
       const carouselHome = document.querySelector('.carousel-home');
       const slidesHome = document.querySelectorAll('.carousel-home img');
       const totalSlidesHome = slidesHome.length;
-  
+
       if (index < 0) {
         currentIndexHome = totalSlidesHome - 1;
       } else if (index >= totalSlidesHome) {
@@ -488,20 +513,20 @@
       } else {
         currentIndexHome = index;
       }
-  
+
       const translateValueHome = -currentIndexHome * 100 + '%';
       carouselHome.style.transform = 'translateX(' + translateValueHome + ')';
     }
-  
+
     function prevSlideHome() {
       showSlideHome(currentIndexHome - 1);
     }
-  
+
     function nextSlideHome() {
       showSlideHome(currentIndexHome + 1);
     }
   </script>
-   <script>
+  <script>
     document.addEventListener('DOMContentLoaded', function () {
       let reviewIndex = 0;
 
@@ -518,7 +543,7 @@
         reviewIndex = (reviewIndex + direction + reviews.length) % reviews.length;
         const translateValue = -reviewIndex * (reviewWidth + 55); // Adjusted margin
 
-        
+
         if (totalWidth + translateValue < container.offsetWidth) {
           reviewIndex = 0;
           container.style.transform = 'translateX(0)';
@@ -537,68 +562,69 @@
       });
     });
   </script>
-     <script>
-      function incrementNumber(counterElement, targetValue) {
-          var currentValue = 0;
+  <script>
+    function incrementNumber(counterElement, targetValue) {
+      var currentValue = 0;
 
-          var interval = setInterval(function() {
-              counterElement.textContent = currentValue;
-              currentValue++;
+      var interval = setInterval(function () {
+        counterElement.textContent = currentValue;
+        currentValue++;
 
-              
-              if (currentValue > targetValue) {
-                  clearInterval(interval);
-              }
-          }, 100);
-      }
 
-      function handleIntersection(entries, observer) {
-          entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                  incrementNumber(document.getElementById("counter"), 500);
-                  incrementNumber(document.getElementById("counter2"), 15);
-                  incrementNumber(document.getElementById("counter3"), 1);
-                  observer.disconnect();
-              }
-          });
-      }
+        if (currentValue > targetValue) {
+          clearInterval(interval);
+        }
+      }, 100);
+    }
 
-      var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
-      var targetElement = document.getElementById("scrollableSection");
-      observer.observe(targetElement);
+    function handleIntersection(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          incrementNumber(document.getElementById("counter"), 500);
+          incrementNumber(document.getElementById("counter2"), 15);
+          incrementNumber(document.getElementById("counter3"), 1);
+          observer.disconnect();
+        }
+      });
+    }
+
+    var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+    var targetElement = document.getElementById("scrollableSection");
+    observer.observe(targetElement);
   </script>
   <script>
     function handleIntersection(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                document.getElementById("slideUpElement").style.top = "7em";
-                document.getElementById("slideUpElement").style.opacity = 1;
-            }
-        });
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          document.getElementById("slideUpElement").style.top = "7em";
+          document.getElementById("slideUpElement").style.opacity = 1;
+        }
+      });
     }
 
     var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
     var targetElement = document.getElementById("section");
     observer.observe(targetElement);
-</script>
-<script>
-function handleIntersection(entries, observer) {
-  entries.forEach(entry => {
-      if (entry.isIntersecting) {
+  </script>
+  <script>
+    function handleIntersection(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
           document.getElementById("slideUpElement2").style.left = "0em";
           document.getElementById("slideUpElement3").style.right = "0em";
           document.getElementById("slideUpElement4").style.right = "0em";
           document.getElementById("slideUpElement2").style.opacity = 1;
           document.getElementById("slideUpElement3").style.opacity = 1;
           document.getElementById("slideUpElement4").style.opacity = 1;
-      }
-  });
-}
+        }
+      });
+    }
 
-var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
-var targetElement = document.getElementById("section2");
-observer.observe(targetElement);
-</script>
+    var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+    var targetElement = document.getElementById("section2");
+    observer.observe(targetElement);
+  </script>
 
 </body>
+
 </html>
