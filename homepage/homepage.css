@@ -63,7 +63,7 @@
 .logo1 {
   height: 9.5em;
   width: 45em;
-  background-image: url("/newpages/logonew.png");
+  background-image: url("../newpages/logonew.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
